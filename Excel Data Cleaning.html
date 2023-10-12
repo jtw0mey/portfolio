@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<li><a href="index.html" class="button">Home</a></li>
+		<title>Microsoft Excel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Microsoft Excel</h1>
+						<p>Data Cleaning<br />
+						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
+					</header>
+
+
+				<!-- Main -->
+					<!-- <div id="main"> -->
+
+
+						<!-- First Section -->
+							<section id="first" class="main">
+								<header class="major">
+									<h2>Cleaning data in an Excel file</h2>
+								    </li>
+									<img src="images/CleanOriginal.png" width="1350" height="650"/>
+									</li>
+									<br /> 
+									<br /> 
+									<p><u><b>P r o j e c t</b></u>
+										<br /> 
+										A dataset about US Presidents has numerous mistakes and errors. If the data has inconsistencies 
+										and errors, it is likely the results will be flawed when you go on to do further analysis. 
+										I will be cleaning this file and making the data standardized and in usable formats.
+										<br /> 
+										<br /> 
+										<u><b>D a t a &nbsp;&nbsp;  C l e a n i n g</b></u>
+										<br /> 
+										I first checked if there were any duplicate rows using Excel's <b>remove duplicates</b> function, 
+										it found 2 duplicate rows for Barack Obama and Woodrow Wilson. These were removed.<br />
+										<br />
+										I then used the <b>=PROPER</b> function to capitalize the first letters of each President's names. This capitalizes 
+										the first letter in a text string and any other letters in text that follow any character other than a letter.
+										I did this to standardize the names in a uniform format.
+										<br />E.g. <em>'franklin d. roosevelt'</em>&nbsp; was transformed to <em>'Franklin D. Roosevelt'</em>.<br />
+										<br />
+										There is also multiple cells that have excessive spaces in them. I used the <b>=TRIM</b> function to remove 
+										these extra spaces.<br />E.g. <em>'U.S. Senator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp; Class 1&nbsp;&nbsp; )
+										&nbsp;&nbsp;&nbsp;&nbsp;   from &nbsp;&nbsp; Indiana  &nbsp;&nbsp;&nbsp;&nbsp; (1881-1887)'</em>&nbsp; was transformed to 
+										<em>'U.S. Senator (Class 1) from Indiana (1881-1887)'</em>.<br /> 
+										<br /> 
+										I also used filters to see if there were any spelling mistakes or multiple words used for the same meaning.<br />  
+										E.g. <em>'Republican'</em> &nbsp;and &nbsp;<em>'Republicans'</em> &nbsp;are both used in the Party column. <br /> 
+										I used the <b>Find & Replace</b> function to change them both to Republican to standardize the column's data. <br /> 
+										<br /> 
+										For the salary column, I changed the <b>number format</b> from currency to number to removed the $ sign. If the numbers 
+										remained with the $, it would read as a string/text if I were to do further analysis on other platforms like SQL etc. <br /> 
+										E.g. <em>'$35000.00'</em> &nbsp;was transformed to <em>'35000'</em>.<br /> 
+										<br /> 
+										<br /> 
+									</li>
+									<img src="images/CleanComplete.png" width="1350" height="650"/>
+								</li>
+										</p>
+								</ul>
+							</footer>
+						</br>
+					</br>
+				</br>
+
+				<!-- Footer -->
+					<footer id="first">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Oslo &bull; Norway</dd>
+								<dt>Phone</dt>
+								<dd>(+44) 7986 240 164</dd>
+								<dt>Phone(Work)</dt>
+								<dd>(+47) 481 92 482</dd>
+								<dt>Email</dt>
+								<dd><a>jtwomey@hotmail.co.uk</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://linkedin.com/in/jack-twomey" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
+								<!--<li><a href="Power BI dashboards.html" target="_blank" class="label">Power BI</span></a></li> -->
+								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</span></a></li>
+							</ul>
+						</section>
+						
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
