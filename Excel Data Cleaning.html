@@ -21,24 +21,40 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Microsoft Excel</h1>
-						<p>Data Cleaning<br />
+						<h1>Data Cleaning</h1>
+						<p>Microsoft Excel<br />
 						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
 					</header>
 
 
 				<!-- Main -->
-					<!-- <div id="main"> -->
+					<div id="main">
 
 
 						<!-- First Section -->
 							<section id="first" class="main">
 								<header class="major">
-									<h2>Cleaning data in an Excel file</h2>
-								    </li>
-									<img src="images/CleanOriginal.png" width="1350" height="650"/>
-									</li>
-									<br /> 
+									<!-- <h2>Cleaning data in an Excel file</h2> -->
+									<head>
+										<style>
+											* {
+												padding: 0;
+												margin: 0;
+											}
+											.fit { /* set relative picture size */
+												max-width: 100%;
+												max-height: 100%;
+											}
+											.center {
+												display: block;
+												margin: auto;
+											}
+										</style>
+									</head>
+									<body>
+									
+									<img class="center fit" src="images/CleanOriginal.png" >
+									<a href="Data Cleaning in Excel Original.xlsx" > <em>Original Dataset here</em></a><br /> 
 									<br /> 
 									<p><u><b>P r o j e c t</b></u>
 										<br /> 
@@ -52,28 +68,46 @@
 										I first checked if there were any duplicate rows using Excel's <b>remove duplicates</b> function, 
 										it found 2 duplicate rows for Barack Obama and Woodrow Wilson. These were removed.<br />
 										<br />
-										I then used the <b>=PROPER</b> function to capitalize the first letters of each President's names. This capitalizes 
-										the first letter in a text string and any other letters in text that follow any character other than a letter.
-										I did this to standardize the names in a uniform format.
+										I then used the <b>=PROPER</b> function to capitalize the first letters of each President's names and to 
+										standardize the column.
 										<br />E.g. <em>'franklin d. roosevelt'</em>&nbsp; was transformed to <em>'Franklin D. Roosevelt'</em>.<br />
 										<br />
-										There is also multiple cells that have excessive spaces in them. I used the <b>=TRIM</b> function to remove 
-										these extra spaces.<br />E.g. <em>'U.S. Senator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp; Class 1&nbsp;&nbsp; )
+										There are multiple cells that have excessive and uneeded spaces. I used the <b>=TRIM</b> function to remove 
+										these.<br />E.g. <em>'U.S. Senator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp; Class 1&nbsp;&nbsp; )
 										&nbsp;&nbsp;&nbsp;&nbsp;   from &nbsp;&nbsp; Indiana  &nbsp;&nbsp;&nbsp;&nbsp; (1881-1887)'</em>&nbsp; was transformed to 
 										<em>'U.S. Senator (Class 1) from Indiana (1881-1887)'</em>.<br /> 
 										<br /> 
-										I also used filters to see if there were any spelling mistakes or multiple words used for the same meaning.<br />  
+										I used the <b>Find & Replace</b> function to change any spelling mistakes or multiple words for the same meaning.<br />  
 										E.g. <em>'Republican'</em> &nbsp;and &nbsp;<em>'Republicans'</em> &nbsp;are both used in the Party column. <br /> 
-										I used the <b>Find & Replace</b> function to change them both to Republican to standardize the column's data. <br /> 
 										<br /> 
-										For the salary column, I changed the <b>number format</b> from currency to number to removed the $ sign. If the numbers 
-										remained with the $, it would read as a string/text if I were to do further analysis on other platforms like SQL etc. <br /> 
+										For the salary column, I changed the <b>number format</b> from currency to number, and removed the $ sign. If the numbers 
+										remained with the $, it would read as a string/text when performing future analysis on playforms such as SQL. <br /> 
 										E.g. <em>'$35000.00'</em> &nbsp;was transformed to <em>'35000'</em>.<br /> 
 										<br /> 
 										<br /> 
-									</li>
+										<head>
+											<style>
+												* {
+													padding: 0;
+													margin: 0;
+												}
+												.fit { /* set relative picture size */
+													max-width: 100%;
+													max-height: 100%;
+												}
+												.center {
+													display: block;
+													margin: auto;
+												}
+											</style>
+										</head>
+										<body>
+										
+										<img class="center fit" src="images/CleanComplete.png" >
+										<a href="Data Cleaning in Excel Complete.xlsx" > <em>Cleaned Dataset here</em></a><br /> 
+									<!-- </li>
 									<img src="images/CleanComplete.png" width="1350" height="650"/>
-								</li>
+								</li> -->
 										</p>
 								</ul>
 							</footer>
