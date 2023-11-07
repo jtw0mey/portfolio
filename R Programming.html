@@ -206,7 +206,8 @@
 															was done by utilizing R's dyplr package and using its mutate function to create a new column which produces a True or 
 															False if the column's region is Northeast. I then made changes to the geom_line code, making the graph lines know 
 															to differentiate between Northeast data, and the rest of the data. We then need to add an additional line of code 
-															to manually change the line types to solid and dashed, and to remove the additional legend.
+															to set the Northeast line type to solid and the rest of the region's line type to dashed. I also remove the additional 
+															legend that comes with the different line types.
 															<head>
 																<style>
 																	* {
@@ -299,13 +300,13 @@
 																We can clearly see that the region with the highest average price is the Northeast (blue line), and the region 
 																with the lowest average price is the West (orange line). A big reason for this is USA's heavy reliance on Mexico 
 																for their avocados. In 2022, USA imported 1.3m metric tons of avocados from Mexico, whereas they only produced 156k metric 
-																tons themselves. This will have a big effect on the price of avocados because the west of USA borders Mexico, this will 
-																bring lower transportation costs compared to the northeast of USA.<br /> 
+																tons themselves. This will have a big effect on the price of avocados because the west of USA borders Mexico, which will 
+																result in lower transportation costs compared to the northeast of USA.<br /> 
 																<br /> 
-																Another factor making avocados cheaper in the West, is the vast majority of avocados grown in the US are from California, 
+																Another factor making the average price cheaper in the West, is the vast majority of avocados grown in the US are from California, 
 																where the West Coast produces a suitable climate for the growth of avocados. This produces lower prices in the West as 
 																they will have local produce available, without any big transportation or import fees contributing to the price. We see 
-																the opposite of this with the Northeast having the most expensive avocado, with the region being furtherest from Mexico 
+																the opposite of this with the Northeast having the most expensive avocados, with the region being furtherest from Mexico 
 																and the West of USA.<br /> 
 																<br /> 
 																We see two big peaks at the back end of the year in both 2016 and 2017, where the avocado price rises sharply. The rise in 
