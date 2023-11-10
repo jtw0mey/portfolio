@@ -21,7 +21,7 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Data Visualisation</h1>
+						<h1>Data Visualization</h1>
 						<p>R Programming<br />
 						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
 					</header>
@@ -29,8 +29,8 @@
 								<!-- Nav -->
 								<nav id="nav">
 									<ul>
-										<li><a href="#first" class="active">Avocado Project</a></li>
-										<li><a href="#second">Other Graphs</a></li>
+										<li><a href="#first" class="active">Avocado Prices</a></li>
+										<li><a href="#second">Palmer Penguins</a></li>
 									</ul>
 								</nav>	
 
@@ -41,41 +41,13 @@
 												<!-- First Section -->
 												<section id="first" class="main">
 													<header class="major">
-														<h2>Avocado Project</h2>
+														<h2>Avocado Prices <i class="fas fa-lemon"></i></h2>
 														<a href="avocado_price_data.xlsx" > <em>Original Dataset here</em></a><br /> 
 														<br /> 
 														<p><b>P r o j e c t </b> 
 															<br /> 
 															I will be looking at the prices of Avocado's in different regions of USA (Midsouth, Northeast, 
 															Plains, Southeast, West) from 2015 - 2018, and visualizing the change over time using R Programming.  <br /> 
-															<br /> 
-															<br /> 
-															I started by installing and loading ggplot2 and dplyr in to R. Ggplot2 is an open-source 
-															package for data visualization in R that I will be using to produce a line graph. Dplyr is used 
-															for data manipulation and also enables us to use '%>%' as a pipe to forward a value or result on 
-															to the next function. <br /> 
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/avo_packages_ss.png" >
-															<br /> 
-															<br /> 
-															<br /> 
 															<br /> 
 															After uploading the dataset to R, I was able to plot the following line graph quick and easily using ggplot. 
 															The Date and Average Price are on the axis', and the lines are colour coded by region. <br /> 
@@ -97,8 +69,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_first_code_graph_ss.png" >
-															<br /> 
+															<img class="center fit" src="images/Avo/avo_first_code_graph_ss.png" >
 															<head>
 																<style>
 																	* {
@@ -117,7 +88,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_first_line_graph.png" >
+															<img class="center fit" src="images/Avo/avo_first_line_graph.png" >
 															Although this line graph is sufficient and achieves my aim of showing the change in avocado prices, I still 
 															think it is basic and the visualization can be improved. I will try to improve this graph by adding titles, 
 															adding a theme to the graph, enhancing the data I want to show, and editing the colours and fonts.<br /> 
@@ -144,15 +115,14 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_adding_titles_code.png" >
+															<img class="center fit" src="images/Avo/avo_adding_titles_code.png" >
 															<br /> 
 															<br /> 
 															<br /> 
 															<br /> 
-															I then installed and loaded ggthemes, this is another R package that enables me to access additional themes. 
-															I used the 'fivethirtyeight' theme which slightly changed the feel and layout of the graph, removing some 
-															gridlines and moving the colour legend to the bottom of the graph. The theme set my axis titles to blanks, 
-															so I readded the titles using element text.
+															I then used the 'fivethirtyeight' theme from ggthemes which slightly changed the feel and layout of the graph, 
+															removing some gridlines and moving the legend to the bottom of the graph. The theme set my axis 
+															titles to blanks, so I readded the titles using element text.
 															<head>
 																<style>
 																	* {
@@ -171,7 +141,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_theme_code.png" >
+															<img class="center fit" src="images/Avo/avo_theme_code.png" >
 															<br /> 
 															<br /> 
 															<br /> 
@@ -196,18 +166,15 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_line_thickness.png" >
+															<img class="center fit" src="images/Avo/avo_line_thickness.png" >
 															<br /> 
 															<br /> 
 															<br /> 
 															<br /> 
 															I then enhanced the data that I wanted to highlight. For this graph, I wanted to show which region (Northeast) 
-															had the highest average price. I kept this Northeast line solid, whilst changing the rest to dashed lines. This 
-															was done by utilizing R's dyplr package and using its mutate function to create a new column which produces a True or 
-															False if the column's region is Northeast. I then made changes to the geom_line code, making the graph lines know 
-															to differentiate between Northeast data, and the rest of the data. We then need to add an additional line of code 
-															to set the Northeast line type to solid and the rest of the region's line type to dashed. I also remove the additional 
-															legend that comes with the different line types.
+															had the highest average price. I kept this Northeast line solid, whilst changing the rest to dashed lines by 
+															utilizing R's dyplr package and its mutate function. I then made changes to the geom_line code and to the line 
+															type, to differentiate between Northeast data, and the rest of the data.
 															<head>
 																<style>
 																	* {
@@ -226,8 +193,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_enhance_data.png" >
-															<br /> 
+															<img class="center fit" src="images/Avo/avo_enhance_data.png" >
 															<head>
 																<style>
 																	* {
@@ -246,16 +212,15 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_mid_line_graph.png" >
+															<img class="center fit" src="images/Avo/avo_mid_line_graph.png" >
 															<br /> 
 															<br /> 
 															<br /> 
 															<br /> 
-															I am happy with the improvements that I have made to this graph. I will just make some final aesthetic changes to 
-															the font and colour of the lines. I installed and loaded 'extrafont', which gives me access to additional fonts, I 
-															chose Open Sans extrabold as I wanted the title to be bold and striking. This was done by adding the chosen font in 
-															to the theme code we had already used earlier. For the line colours, I used ggplot's default palettes and chose a 
-															bright colour scheme to make the graph more visually appealing.
+															I am happy with the improvements that I have made to this graph. I will just make some final aesthetic 
+															changes to the font and colour of the lines. I changed the texts font to something bold using 
+															'extrafont', as I wanted the title to stand out. For the line colours, I used ggplot's default 
+															palettes and chose a bright colour scheme to make the graph more visually appealing.
 															<head>
 																<style>
 																	* {
@@ -274,8 +239,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_font_and_colour.png" >
-															<br /> 
+															<img class="center fit" src="images/Avo/avo_font_and_colour.png" >
 															<head>
 																<style>
 																	* {
@@ -294,7 +258,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/avo_final_graph.png" >
+															<img class="center fit" src="images/Avo/avo_final_graph.png" >
 															<p><b>A n a l y s i s </b> 
 																<br /> 
 																We can clearly see that the region with the highest average price is the Northeast (blue line), and the region 
@@ -322,36 +286,20 @@
 												</br>
 											</br>
 										</br>
-									</br>
-								</br>
-							</br>
-						</br>
-					</br>
-
-
-						<!-- First Section -->
-							<section id="second" class="main">
-								<header class="major">
-									<h2>Other Graphs</h2>
-									<head>
-										<style>
-											* {
-												padding: 0;
-												margin: 0;
-											}
-											.fit { /* set relative picture size */
-												max-width: 50%;
-												max-height: 100%;
-											}
-											.center {
-												display: block;
-												margin: auto;
-											}
-										</style>
-									</head>
-									<body>
-									
-									<img class="left" src="images/Bar Chart Code.png" >
+										<p><b>A d d i t i o n a l &nbsp;&nbsp;A v o c a d o &nbsp;&nbsp;G r a p h s </b> 
+										<br /> 
+										I created this lollipop chart showing the price of avocados by region. The 'lollipops' have produced 
+										a visually attractive graph with the emphasis on the lollipop's dot drawing the viewer's attention 
+										towards that region's average.<br /> 
+										<br /> 
+										I started by creating a new column for the average price by region by using dyplr's mutate function, and rearranged 
+										it in descending order using tidyverse's fct_reorder. We then plot the graph, originally placing Region on x axis 
+										and Average Price on y axis, this is done as Average Price is discrete data, whereas the x axis needs continuous 
+										data. We then flip the graph using coord_flip to get the axis on the sides we want. Next I used geom_jitter to add 
+										small variation to each point on the graph to avoid overlapping plots. Then geom_hline is used to create the average 
+										overall line where all the 'lollipops' begin. The geom_segment is then utilised for creating the 'lollipop' stick, 
+										where a coloured line goes from the geom_hline out to the average for that specific region.
+									</p>
 									<head>
 										<style>
 											* {
@@ -370,16 +318,143 @@
 									</head>
 									<body>
 									
-									<img class="center fit" src="images/R Bar Chart.png" >
-								    <!-- </li>
-										<img src="images/Bar Chart Code.png" width="450" height="64"></br>
-									</li>
-								</li>
-								<img src="images/R Bar Chart.png" width="1255" height="578"></br>
-							</li> -->
+									<img class="center fit" src="images/Avo/avo_lollipop_chart.png" >
+									<head>
+										<style>
+											* {
+												padding: 0;
+												margin: 0;
+											}
+											.fit { /* set relative picture size */
+												max-width: 100%;
+												max-height: 100%;
+											}
+											.center {
+												display: block;
+												margin: auto;
+											}
+										</style>
+									</head>
+									<body>
+									
+									<img class="center fit" src="images/Avo/avo_lollipop_code.png" >
+						</li>
+						<br /> 
+						<br /> 
+						<br /> 
+						<br /> 
+					<p>
+						<br /> 
+						I also created a simple bar graph showing the average price of avocados in each region. I 
+						put the columns in descending order by Average Price using ggplot's reorder function. I 
+						manually added a blue colour scale to emphasize the price difference.
+					</p>
+							<head>
+								<style>
+									* {
+										padding: 0;
+										margin: 0;
+									}
+									.fit { /* set relative picture size */
+										max-width: 100%;
+										max-height: 100%;
+									}
+									.center {
+										display: block;
+										margin: auto;
+									}
+								</style>
+							</head>
+							<body>
+							
+							<img class="center fit" src="images/Avo/avo_bar_chart.png" >
+							<head>
+								<style>
+									* {
+										padding: 0;
+										margin: 0;
+									}
+									.fit { /* set relative picture size */
+										max-width: 100%;
+										max-height: 100%;
+									}
+									.center {
+										display: block;
+										margin: auto;
+									}
+								</style>
+							</head>
+							<body>
+							
+							<img class="center fit" src="images/Avo/avo_bar_code.png" >
+				</li>
+			</br>
+		</br>
+	</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+						<!-- First Section -->
+							<section id="second" class="main">
+								<header class="major">
+									<h2>Palmer Penguins <i class="fas fa-kiwi-bird"></i></h2>
+									<a href="Palmer_penguin_data.xlsx" > <em>Original Dataset here</em></a><br />
+									<br /> 
+			<!-- <p><b>P e n g u i n &nbsp;&nbsp;D a t a &nbsp;&nbsp;G r a p h s </b> -->
+			<p>I analysed a dataset containing penguins based in Palmer Archipelago, Antartica. 
+			The data includes size measurements of three species of penguin, from three different islands.<br /> 
+			<br /> 
+			I first looked at body mass vs flipper length for each species. We can see a positive relationship 
+			between the two measurements, with Gentoo penguins having the largest body mass and flipper length 
+			of the three species. This can be seen with the blue squares dominating the top right of the 
+			scatterplot.
+			</p>
+									<head>
+										<style>
+											* {
+												padding: 0;
+												margin: 0;
+											}
+											.fit { /* set relative picture size */
+												max-width: 100%;
+												max-height: 100%;
+											}
+											.center {
+												display: block;
+												margin: auto;
+											}
+										</style>
+									</head>
+									<body>
+									
+									<img class="center fit" src="images/Penguin/graph_scatter_body_vs_flipper.png" >
+									<head>
+										<style>
+											* {
+												padding: 0;
+												margin: 0;
+											}
+											.fit { /* set relative picture size */
+												max-width: 100%;
+												max-height: 100%;
+											}
+											.center {
+												display: block;
+												margin: auto;
+											}
+										</style>
+									</head>
+									<body>
+									
+									<img class="center fit" src="images/Penguin/code_scatter_body_vs_flipper.png" >
 						</li>
 								</br>
 							</br>
+						</br>
+					</br>
 						<section id="second" class="main">
 							<header class="major">
 								<!-- <h2>Scatterplot</h2> -->
@@ -400,8 +475,13 @@
 									</style>
 								</head>
 								<body>
-								
-								<img class="left" src="images/R Scatterplot Code.png" >
+									<br /> 
+									<br /> 
+									<p>I then took a look at the difference between male and female penguins using a facet grid. Both 
+										scatterplots shows a similar pattern as the previous graph, but this displays the contrast in 
+										size between the genders, with males being larger than females in all three species.
+										</p>
+								<img class="center fit" src="images/Penguin/graph_gender_facet.png" >
 								<head>
 									<style>
 										* {
@@ -420,13 +500,7 @@
 								</head>
 								<body>
 								
-								<img class="center fit" src="images/R Scatterplot Graph.png" >
-						<!-- </li>
-						<img src="images/R Scatterplot Code.png" width="800" height="80"></br>
-					</li>
-				</li>
-				<img src="images/R Scatterplot Graph.png" width="1255" height="578"></br>
-			</li> -->
+								<img class="center fit" src="images/Penguin/code_gender_facet.png" >
 								</ul>
 							</footer>
 						</br>
