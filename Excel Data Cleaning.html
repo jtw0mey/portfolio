@@ -57,32 +57,31 @@
 									<a href="Data Cleaning in Excel Original.xlsx" > <em>Original Dataset here</em></a><br /> 
 									<br /> 
 									<p><u><b>P r o j e c t</b></u>
-										<br /> 
-										A dataset about US Presidents has numerous mistakes and errors. If the data has inconsistencies 
+										<div><p>A dataset about US Presidents has numerous mistakes and errors. If the data has inconsistencies 
 										and errors, it is likely the results will be flawed when you go on to do further analysis. 
-										I will be cleaning this file and making the data standardized and in usable formats.
+										I will be cleaning this file and making the data standardized and in usable formats.</p></div>
 										<br /> 
 										<br /> 
-										<u><b>D a t a &nbsp;&nbsp;  C l e a n i n g</b></u>
+										<p><u><b>D a t a &nbsp;&nbsp;  C l e a n i n g</b></u>
 										<br /> 
-										I first checked if there were any duplicate rows using Excel's <b>remove duplicates</b> function, 
-										it found 2 duplicate rows for Barack Obama and Woodrow Wilson. These were removed.<br />
+										<div><p>I first checked if there were any duplicate rows using Excel's <b>remove duplicates</b> function, 
+										it found 2 duplicate rows for Barack Obama and Woodrow Wilson. These were removed.</p></div>
 										<br />
-										I then used the <b>=PROPER</b> function to capitalize the first letters of each President's names and to 
+										<div><p>I then used the <b>=PROPER</b> function to capitalize the first letters of each President's names and to 
 										standardize the column.
-										<br />E.g. <em>'franklin d. roosevelt'</em>&nbsp; was transformed to <em>'Franklin D. Roosevelt'</em>.<br />
+										<br />E.g. <em>'franklin d. roosevelt'</em>&nbsp; was transformed to <em>'Franklin D. Roosevelt'</em>.</p></div>
 										<br />
-										There are multiple cells that have excessive and uneeded spaces. I used the <b>=TRIM</b> function to remove 
+										<div><p>There are multiple cells that have excessive and uneeded spaces. I used the <b>=TRIM</b> function to remove 
 										these.<br />E.g. <em>'U.S. Senator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp; Class 1&nbsp;&nbsp; )
 										&nbsp;&nbsp;&nbsp;&nbsp;   from &nbsp;&nbsp; Indiana  &nbsp;&nbsp;&nbsp;&nbsp; (1881-1887)'</em>&nbsp; was transformed to 
-										<em>'U.S. Senator (Class 1) from Indiana (1881-1887)'</em>.<br /> 
+										<em>'U.S. Senator (Class 1) from Indiana (1881-1887)'</em>.</p></div>
 										<br /> 
-										I used the <b>Find & Replace</b> function to change any spelling mistakes or multiple words for the same meaning.<br />  
-										E.g. <em>'Republican'</em> &nbsp;and &nbsp;<em>'Republicans'</em> &nbsp;are both used in the Party column. <br /> 
+										<div><p>I used the <b>Find & Replace</b> function to change any spelling mistakes or multiple words for the same meaning.<br />  
+										E.g. <em>'Republican'</em> &nbsp;and &nbsp;<em>'Republicans'</em> &nbsp;are both used in the Party column. </p></div> 
 										<br /> 
-										For the salary column, I changed the <b>number format</b> from currency to number, and removed the $ sign. If the numbers 
+										<div><p>For the salary column, I changed the <b>number format</b> from currency to number, and removed the $ sign. If the numbers 
 										remained with the $, it would read as a string/text when performing future analysis on playforms such as SQL. <br /> 
-										E.g. <em>'$35000.00'</em> &nbsp;was transformed to <em>'35000'</em>.</p> 
+										E.g. <em>'$35000.00'</em> &nbsp;was transformed to <em>'35000'</em>.</p></div>
 										<head>
 											<style>
 												* {
