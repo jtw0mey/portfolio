@@ -45,11 +45,10 @@
 														<a href="avocado_price_data.xlsx" > <em>Original Dataset here</em></a><br> 
 														<br> <p>
 														<!-- <u><b>P r o j e c t </b></u> -->
-															I will be looking at the prices of Avocado's in different regions of USA (Midsouth, Northeast, 
-															Plains, Southeast, West) from 2015 - 2018, and visualizing the change over time using R Programming.  <br> 
-															<br> 
-															After uploading the dataset to R, I was able to plot the following line graph quick and easily using ggplot. 
-															The Date and Average Price are on the axis', and the lines are colour coded by region. <br>
+															<div><p>I will be looking at the prices of Avocado's in different regions of USA (Midsouth, Northeast, 
+															Plains, Southeast, West) from 2015 - 2018, and visualizing the change over time using R Programming.</p>
+															<div><p>After uploading the dataset to R, I was able to plot the following line graph quick and easily using ggplot. 
+															The Date and Average Price are on the axis', and the lines are colour coded by region.</p>
 															<head>
 																<style>
 																	* {
@@ -88,14 +87,12 @@
 															<body>
 															
 															<img class="center fit" src="images/Avo/avo_first_line_graph.png" >
-															Although this line graph is sufficient and achieves my aim of showing the change in avocado prices, I still 
+															<p>Although this line graph is sufficient and achieves my aim of showing the change in avocado prices, I still 
 															think it is basic and the visualization can be improved. I will try to improve this graph by adding titles, 
-															adding a theme to the graph, enhancing the data I want to show, and editing the colours and fonts.<br> 
+															adding a theme to the graph, enhancing the data I want to show, and editing the colours and fonts.</p><br> 
 															<br> 
 															<br> 
-															<br> 
-															<br> 
-															I will start by using 'labs' to add a title and subtitle to the graph, and modify the axis' and legends names.
+															<div><p>I will start by using 'labs' to add a title and subtitle to the graph, and modify the axis' and legends names.</p>
 															<head>
 																<style>
 																	* {
@@ -119,9 +116,9 @@
 															<br> 
 															<br> 
 															<br> 
-															I then used the 'fivethirtyeight' theme from ggthemes which slightly changed the feel and layout of the graph, 
+															<div><p>I then used the 'fivethirtyeight' theme from ggthemes which slightly changed the feel and layout of the graph, 
 															removing some gridlines and moving the legend to the bottom of the graph. The theme set my axis 
-															titles to blanks, so I readded these using element text.
+															titles to blanks, so I readded these using element text.</p>
 															<head>
 																<style>
 																	* {
@@ -145,8 +142,8 @@
 															<br> 
 															<br> 
 															<br> 
-															I also increased the thickness and opacity of the lines by increasing line size to 1.5, and alpha to 0.75, to 
-															show each region line more clearly.
+															<div><p>I also increased the thickness and opacity of the lines by increasing line size to 1.5, and alpha to 0.75, to 
+															show each region line more clearly.</p>
 															<head>
 																<style>
 																	* {
@@ -170,10 +167,10 @@
 															<br> 
 															<br> 
 															<br> 
-															I then enhanced the data that I wanted to highlight. For this graph, I wanted to show which region (Northeast) 
+															<div><p>I then enhanced the data that I wanted to highlight. For this graph, I wanted to show which region (Northeast) 
 															had the highest average price. I kept this Northeast line solid, whilst changing the rest to dashed lines by 
 															utilizing R's dyplr package and its mutate function. I then made changes to the geom_line code and to the line 
-															type, to differentiate between Northeast data, and the rest of the data.
+															type, to differentiate between Northeast data, and the rest of the data.</p>
 															<head>
 																<style>
 																	* {
@@ -338,7 +335,7 @@
 		<br>
 					<p>
 					<br>
-						I also created a simple bar graph showing the average price of avocados in each region. I 
+						<div><p>I also created a simple bar graph showing the average price of avocados in each region. I 
 						put the columns in descending order by Average Price using ggplot's reorder function. I 
 						manually added a blue colour scale to emphasize the price difference.
 					</p>
@@ -386,12 +383,13 @@
 	<br> 
 <br>
 <br>
+<div>
 <p>
 <b><em>What I Learnt:</em></b> 
-<br>
-&#8226; How to use themes and modify them to add/remove certain elements.<br>
-&#8226; How to use dyplr to create different line types using a True/False column.<br>
-&#8226; How to create a lollipop chart using the average as the 'lollipop'.<br></p>
+<p>&#8226; How to use themes and modify them to add/remove certain elements.</p>
+<p>&#8226; How to use dyplr to create different line types using a True/False column.</p>
+<p>&#8226; How to create a lollipop chart using the average as the 'lollipop'.</p>
+</div>
 <br>
 <br>
 <br>
@@ -406,14 +404,13 @@
 									<h2>Palmer Penguins <i class="fas fa-kiwi-bird"></i></h2>
 									<a href="Palmer_penguin_data.xlsx" > <em>Original Dataset here</em></a><br>
 									<br> 
-			<p>I analysed a dataset containing penguins based in Palmer Archipelago, Antartica. 
-			The data includes size measurements of three species of penguin, from three different islands.<br> 
-			<br> 
-			I first looked at body mass vs flipper length for each species. We can see a positive relationship 
+			<div><p>I analysed a dataset containing penguins based in Palmer Archipelago, Antartica. 
+			The data includes size measurements of three species of penguin, from three different islands.</div>
+			<div><p>I first looked at body mass vs flipper length for each species. We can see a positive relationship 
 			between the two measurements, with Gentoo penguins having the largest body mass and flipper length 
 			of the three species. This can be seen with the blue squares dominating the top right of the 
 			scatterplot.
-			</p>
+			</div></p>
 									<head>
 										<style>
 											* {
@@ -478,10 +475,10 @@
 								</head>
 								<body>
 									<br> 
-									<p>I then took a look at the difference between male and female penguins using a facet grid. Both 
+									<div><p>I then took a look at the difference between male and female penguins using a facet grid. Both 
 										scatterplots shows a similar pattern as the previous graph, but this displays the contrast in 
 										size between the genders, with males being larger than females in all three species.
-										</p>
+										</p></div>
 								<img class="center fit" src="images/Penguin/graph_gender_facet.png" >
 								<head>
 									<style>
