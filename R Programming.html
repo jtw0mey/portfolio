@@ -286,9 +286,8 @@
 										<p><b>A d d i t i o n a l &nbsp;&nbsp;A v o c a d o &nbsp;&nbsp;G r a p h s </b>
 										<div><p>I created this lollipop chart showing the price of avocados by region. The 'lollipops' have produced 
 										a visually attractive graph with the emphasis on the lollipop's dot drawing the viewer's attention 
-										towards that region's average.<br>
-										<br>
-										I started by creating a new column for the average price by region by using dyplr's mutate function, and rearranged 
+										towards that region's average.</div>
+										<div><p>I started by creating a new column for the average price by region by using dyplr's mutate function, and rearranged 
 										it in descending order using tidyverse's fct_reorder. We then plot the graph, originally placing Region on x axis 
 										and Average Price on y axis, this is done as Average Price is discrete data, whereas the x axis needs continuous 
 										data. We then flip the graph using coord_flip to get the axis on the sides we want. Next I used geom_jitter to add 
