@@ -43,14 +43,13 @@
 													<header class="major">
 														<h2>Avocado Prices <i class="fas fa-lemon"></i></h2>
 														<a href="avocado_price_data.xlsx" > <em>Original Dataset here</em></a><br /> 
-														<br /> 
-														<p><b>P r o j e c t </b> 
-															<br /> 
+														<br /> <p>
+														<!-- <u><b>P r o j e c t </b></u> -->
 															I will be looking at the prices of Avocado's in different regions of USA (Midsouth, Northeast, 
 															Plains, Southeast, West) from 2015 - 2018, and visualizing the change over time using R Programming.  <br /> 
 															<br /> 
 															After uploading the dataset to R, I was able to plot the following line graph quick and easily using ggplot. 
-															The Date and Average Price are on the axis', and the lines are colour coded by region. <br /> 
+															The Date and Average Price are on the axis', and the lines are colour coded by region. <br />
 															<head>
 																<style>
 																	* {
@@ -122,7 +121,7 @@
 															<br /> 
 															I then used the 'fivethirtyeight' theme from ggthemes which slightly changed the feel and layout of the graph, 
 															removing some gridlines and moving the legend to the bottom of the graph. The theme set my axis 
-															titles to blanks, so I readded the titles using element text.
+															titles to blanks, so I readded these using element text.
 															<head>
 																<style>
 																	* {
@@ -217,10 +216,8 @@
 															<br /> 
 															<br /> 
 															<br /> 
-															I am happy with the improvements that I have made to this graph. I will just make some final aesthetic 
-															changes to the font and colour of the lines. I changed the texts font to something bold using 
-															'extrafont', as I wanted the title to stand out. For the line colours, I used ggplot's default 
-															palettes and chose a bright colour scheme to make the graph more visually appealing.
+															I am happy with the improvements that I have made to this line graph. I will just make some final aesthetic 
+															changes to the font and colour of the lines. 
 															<head>
 																<style>
 																	* {
@@ -259,26 +256,26 @@
 															<body>
 															
 															<img class="center fit" src="images/Avo/avo_final_graph.png" >
-															<p><b>A n a l y s i s </b> 
+															<u><p><b>A n a l y s i s </b></u>
 																<br /> 
 																We can clearly see that the region with the highest average price is the Northeast (blue line), and the region 
 																with the lowest average price is the West (orange line). A big reason for this is USA's heavy reliance on Mexico 
-																for their avocados. In 2022, USA imported 1.3m metric tons of avocados from Mexico, whereas they only produced 156k metric 
-																tons themselves. This will have a big effect on the price of avocados because the west of USA borders Mexico, which will 
-																result in lower transportation costs compared to the northeast of USA.<br /> 
+																for their avocados. In 2022, USA imported 1.3m metric tons of avocados from Mexico, whereas they only produced 
+																156k metric tons themselves. This will have a big effect on the price of avocados because the west of USA borders 
+																Mexico, which will result in lower transportation costs compared to the northeast of USA.<br /> 
 																<br /> 
-																Another factor making the average price cheaper in the West, is the vast majority of avocados grown in the US are from California, 
-																where the West Coast produces a suitable climate for the growth of avocados. This produces lower prices in the West as 
-																they will have local produce available, without any big transportation or import fees contributing to the price. We see 
-																the opposite of this with the Northeast having the most expensive avocados, with the region being furtherest from Mexico 
-																and the West of USA.<br /> 
+																Another factor making the average price cheaper in the West, is the vast majority of avocados grown in the US are from 
+																California, where the West Coast produces a suitable climate for the growth of avocados. This produces lower prices in 
+																the West as they have local produce available, in addition to the lower transportation costs. We see the opposite of 
+																this with the Northeast having the most expensive avocados, with the region being furthest from Mexico and the West of 
+																USA.<br /> 
 																<br /> 
-																We see two big peaks at the back end of the year in both 2016 and 2017, where the avocado price rises sharply. The rise in 
-																late 2016 can be explained by many 
+																We see two big peaks at the back end of the year in both 2016 and 2017, where the avocado price rises sharply. The rise 
+																in late 2016 can be explained by many 
 																<a href="https://www.dallasnews.com/business/local-companies/2016/10/28/strikes-in-mexico-lead-to-avocado-shortage-increased-prices-in-dallas/" target="blank">avocado producers' in Mexico going on strike</a> 
 																in October 2016, causing avocados to triple in price in some US cities.
-																The 2017 peak can be explained by the <a href="https://www.bbc.com/news/business-39768480" target="blank">reduced harvest in Mexico and California</a> 
-																in mid- to late-2017, causing prices to surge again.
+																The 2017 peak can be explained by the <a href="https://www.bbc.com/news/business-39768480" target="blank">reduced harvest 
+																in Mexico and California</a> in mid- to late-2017, causing prices to surge again.
 															</p>
 													</ul>
 												</footer>
@@ -286,7 +283,7 @@
 												</br>
 											</br>
 										</br>
-										<p><b>A d d i t i o n a l &nbsp;&nbsp;A v o c a d o &nbsp;&nbsp;G r a p h s </b> 
+										<u><p><b>A d d i t i o n a l &nbsp;&nbsp;A v o c a d o &nbsp;&nbsp;G r a p h s </b></u>
 										<br /> 
 										I created this lollipop chart showing the price of avocados by region. The 'lollipops' have produced 
 										a visually attractive graph with the emphasis on the lollipop's dot drawing the viewer's attention 
@@ -388,15 +385,25 @@
 							
 							<img class="center fit" src="images/Avo/avo_bar_code.png" >
 				</li>
-			</br>
-		</br>
-	</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+				<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<p>
+<b><em>What I Learnt:</em></b> 
+<br /> 
+&#8226; How to use themes and modify them to add/remove certain elements.<br />
+&#8226; How to use dyplr to create different line types using a True/False column.<br />
+&#8226; How to create a lollipop chart using the average as the 'lollipop'.<br /></p>
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<hr>
+<br /> 
 						<!-- First Section -->
 							<section id="second" class="main">
 								<header class="major">
@@ -508,9 +515,7 @@
 				</br>
 			</br>
 		</br>
-	</br>
-</br>
-
+	<hr>
 				<!-- Footer -->
 					<footer id="first">
 						<section>
