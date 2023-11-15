@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<li><a href="index.html" class="button">Home</a></li>
+		<title>Microsoft Excel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Microsoft Excel</h1>
+						<!-- <p>Microsoft Excel<br /> -->
+						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
+					</header>
+
+					<!-- Nav -->
+					<nav id="nav">
+					<ul>
+					<li><a href="#first" class="active">Regression Analysis</a></li>
+					<li><a href="#second">Data Cleaning</a></li>
+					</ul>
+					</nav>	
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<!-- First Section -->
+							<section id="first" class="main">
+								<header class="major">
+									<h2>Regression Analysis</h2>
+									<a href="Regression_Salary_data.xlsx" > <em>Excel file here</em></a><br /> 
+									<br /> 
+									<!-- <p><u><b>P r o j e c t</b></u> -->
+										<div><p>Regression analysis is a method of examining the relationship and influence of an independent 
+										variable on a dependent variable. For this project I will be using an Excel dataset containing fictional 
+										salary data, age and years of experience. I will be using the Analysis ToolPak add-on to run 
+										regression on my dataset in Excel, where I want to find out about the relationship between salary and age, 
+										and salary and years of experience. This has given me the following results for <em>Salary vs Age:</em></p></div>
+										<head>
+											<style>
+												* {
+													padding: 0;
+													margin: 0;
+												}
+												.fit { /* set relative picture size */
+													max-width: 100%;
+													max-height: 100%;
+												}
+												.center {
+													display: block;
+													margin: auto;
+												}
+											</style>
+										</head>
+										<body>
+										
+									<img class="center fit" src="images/Excel/salary_vs_age_regression.png" ></br>
+									<div><p>We will start by looking at the Regression Statistics. <b><em>Multiple R</em></b>&nbsp; is the correlation 
+									coefficient that measures the linear relationship between the variables (salary and age). The value can 
+									be any number between -1 and 1:&nbsp; -1 shows a strong negative relationship, 1 shows a strong positive 
+									relationship, and 0 shows there is no relationship. The Salary vs Age has given a <b><em>Multiple R</em></b>&nbsp; 
+									correlation coefficient of 0.73, indicating a strong positive relationship. The graph below shows when one 
+									variable goes up, the value of the other tends to the same.</p></div>
+									<div><p><b><em>R Square</em></b>&nbsp; is the coefficient of determination. It measures how many points fall on 
+									the regression line as a percentage value, with Salary vs Age having a relatively low <b><em>R Square</em></b> value 
+									of 53%. This is fairly predictable as regression analysis on some fields of study have an inherently greater 
+									amount of unexplainable variation. This data set contains human data about salaries, which generally brings 
+									greater variation with studies on human behavior usually producing low scores of less than 50% as people 
+									are hard to predict. This can be seen below with many data points falling far from the regression line.</p></div>
+									<div><p><b><em>Coffecients</em></b>&nbsp; help us build a linear regression equation that will turn our data in 
+									to a scatterplot using <em>“Y = bX + a”</em>. Our equation will take shape as <em>“Y = Age Coefficient * x + Intercept”</em> 
+									&nbsp;or <em>“Y = 5041.6 * x - 54136”</em> &nbsp;as plotted below.</p></div>
+											<head>
+												<style>
+													* {
+														padding: 0;
+														margin: 0;
+													}
+													.fit { /* set relative picture size */
+														max-width: 100%;
+														max-height: 100%;
+													}
+													.center {
+														display: block;
+														margin: auto;
+													}
+												</style>
+											</head>
+											<body>
+											
+											<img class="center fit" src="images/Excel/salary_vs_age_graph.png" ></br>
+											<head>
+												<style>
+													* {
+														padding: 0;
+														margin: 0;
+													}
+													.fit { /* set relative picture size */
+														max-width: 100%;
+														max-height: 100%;
+													}
+													.center {
+														display: block;
+														margin: auto;
+													}
+												</style>
+											</head>
+											<body>
+											</br>
+										</br>
+									</br>
+								</br>
+							</br>
+											<div><p>These are the results for <em>Salary vs Years of Experience:</em></p></div>
+												<head>
+													<style>
+														* {
+															padding: 0;
+															margin: 0;
+														}
+														.fit { /* set relative picture size */
+															max-width: 100%;
+															max-height: 100%;
+														}
+														.center {
+															display: block;
+															margin: auto;
+														}
+													</style>
+												</head>
+												<body>
+												
+												<img class="center fit" src="images/Excel/salary_vs_experience_regression.png" ></br>
+												<div><p>The <b><em>Multiple R</em></b>&nbsp; correlation coefficient for Salary vs Years of Experience also displays 
+													a strong positive relationship with a value of 0.81, slightly stronger than the Salary vs. Age relationship.</p></div>
+													<div><p>The <b><em>R Square</em></b>&nbsp; value is again slightly stronger than Salary vs Age with a value of 65%, 
+													with more data points falling on the regression line.</p></div>
+													<div><p>Our <b><em>Coffecients</em></b>&nbsp; equation will be <em>“Y = Years of Experience Coefficient * x + Intercept”</em> 
+													&nbsp;or <em>“Y = 7039.7 * x - 58384”</em> &nbsp;to plot our linear regression as seen below.</p></div>
+													<head>
+														<style>
+															* {
+																padding: 0;
+																margin: 0;
+															}
+															.fit { /* set relative picture size */
+																max-width: 100%;
+																max-height: 100%;
+															}
+															.center {
+																display: block;
+																margin: auto;
+															}
+														</style>
+													</head>
+													<body>
+													
+													<img class="center fit" src="images/Excel/salary_vs_experience_graph.png" ></br>
+												</br>
+													<div><p>Our regression analysis has showed the strong positive relationship with both Salary vs Age 
+													and Salary vs Years of Experience, with the latter being slightly stronger. This would make sense as experience is 
+													valued higher than age. Experience is one of the main contributors to people earning higher salaries, whereas age 
+													alone has little to no effect. The two variables have similar regression lines and relationships with Salary because 
+													the more years of experience you have, the higher your age will be, but <b>not</b> vice versa.
+													<br>
+<br>
+<div>
+<p>
+<b><em>What I Learnt:</em></b> 
+<p>&#8226; How to produce regression analysis on an Excel dataset with the Analysis ToolPak add-on</p>
+<p>&#8226; How to interpet 'Multiple R' and 'R Square'.</p>
+<p>&#8226; How to use coffecients to create a linear regression equation to produce a scatterplot with regression line.</p>
+</div>
+
+								</ul>
+							</footer>
+						</br>
+					</br>
+				</br>
+			</br>
+		</br>
+	<hr>
+</br>
+						<!-- First Section -->
+							<section id="second" class="main">
+								<header class="major">
+									<h2>Data Cleaning in Excel</h2>
+									<head>
+										<style>
+											* {
+												padding: 0;
+												margin: 0;
+											}
+											.fit { /* set relative picture size */
+												max-width: 100%;
+												max-height: 100%;
+											}
+											.center {
+												display: block;
+												margin: auto;
+											}
+										</style>
+									</head>
+									<body>
+									
+									<img class="center fit" src="images/Excel/CleanOriginal.png" >
+									<a href="Data Cleaning in Excel Original.xlsx" > <em>Original Dataset here</em></a><br /> 
+									<br /> 
+									<p><u><b>P r o j e c t</b></u>
+										<div><p>A dataset about US Presidents has numerous mistakes and errors. If the data has inconsistencies 
+										and errors, it is likely the results will be flawed when you go on to do further analysis. 
+										I will be cleaning this file and making the data standardized and in usable formats.</p></div>
+										<p><u><b>D a t a &nbsp;&nbsp;  C l e a n i n g</b></u>
+										<br /> 
+										<div><p>I first checked if there were any duplicate rows using Excel's <b>remove duplicates</b> function, 
+										it found 2 duplicate rows for Barack Obama and Woodrow Wilson. These were removed.</p></div>
+										<br />
+										<div><p>I then used the <b>=PROPER</b> function to capitalize the first letters of each President's names and to 
+										standardize the column.
+										<br />E.g. <em>'franklin d. roosevelt'</em>&nbsp; was transformed to <em>'Franklin D. Roosevelt'</em>.</p></div>
+										<br />
+										<div><p>There are multiple cells that have excessive and uneeded spaces. I used the <b>=TRIM</b> function to remove 
+										these.<br />E.g. <em>'U.S. Senator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp; Class 1&nbsp;&nbsp; )
+										&nbsp;&nbsp;&nbsp;&nbsp;   from &nbsp;&nbsp; Indiana  &nbsp;&nbsp;&nbsp;&nbsp; (1881-1887)'</em>&nbsp; was transformed to 
+										<em>'U.S. Senator (Class 1) from Indiana (1881-1887)'</em>.</p></div>
+										<br /> 
+										<div><p>I used the <b>Find & Replace</b> function to change any spelling mistakes or multiple words for the same meaning.<br />  
+										E.g. <em>'Republican'</em> &nbsp;and &nbsp;<em>'Republicans'</em> &nbsp;are both used in the Party column. </p></div> 
+										<br /> 
+										<div><p>For the salary column, I changed the <b>number format</b> from currency to number, and removed the $ sign. If the numbers 
+										remained with the $, it would read as a string/text when performing future analysis on playforms such as SQL. <br /> 
+										E.g. <em>'$35000.00'</em> &nbsp;was transformed to <em>'35000'</em>.</p></div>
+										<head>
+											<style>
+												* {
+													padding: 0;
+													margin: 0;
+												}
+												.fit { /* set relative picture size */
+													max-width: 100%;
+													max-height: 100%;
+												}
+												.center {
+													display: block;
+													margin: auto;
+												}
+											</style>
+										</head>
+										<body>
+										
+										<img class="center fit" src="images/Excel/CleanComplete.png" >
+										<a href="Data Cleaning in Excel Complete.xlsx" > <em>Cleaned Dataset here</em></a><br /> 
+								</ul>
+							</footer>
+						</br>
+					</br>
+				</br>
+			</br>
+		</br>
+	<hr>
+				<!-- Footer -->
+					<footer id="first">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Oslo &bull; Norway</dd>
+								<dt>Phone</dt>
+								<dd>(+44) 7986 240 164</dd>
+								<dt>Phone(Work)</dt>
+								<dd>(+47) 481 92 482</dd>
+								<dt>Email</dt>
+								<dd><a>jtwomey@hotmail.co.uk</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://linkedin.com/in/jack-twomey" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
+								<!--<li><a href="Power BI dashboards.html" target="_blank" class="label">Power BI</span></a></li> -->
+								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</span></a></li>
+							</ul>
+						</section>
+						
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
