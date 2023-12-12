@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<li><a href="index.html" class="button">Home</a></li>
+		<title>Power Outages Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Power Outages in the US</h1>
+						<p>Power BI<br />
+						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
+					</header>
+
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<!-- First Section -->
+							<section id="first" class="main">
+								<header class="major">
+									<!-- <h2>Apple Carbon Neutral Dashboard</h2> -->
+									<head>
+										<style>
+											* {
+												padding: 0;
+												margin: 0;
+											}
+											.fit { /* set relative picture size */
+												max-width: 100%;
+												max-height: 100%;
+											}
+											.center {
+												display: block;
+												margin: auto;
+											}
+										</style>
+									</head>
+									<body>
+									
+									<img class="center fit" src="images/Power/Power_Outage_Dashboard.png" >
+								    <!-- </li>
+									<img src="images/Apple Dashboard-1.png" alt="" width="1255" height="3100"/>
+									</li> -->
+									<a href="original_DOE_Electric_Disturbance_Events.xlsx" > <em>Original Dataset here</em></a><br />
+									<a href="cleaned_DOE_Electric_Disturbance_Events.xlsx" > <em>Cleaned Dataset here</em></a><br /> 
+									<br /> 
+									<u><p><b>P r o j e c t </b></u> 
+										<div><p>For this project I will be playing the role of an Analytics Consultant hired by 
+										the U.S. Department of Energy. I will need to <b>consolidate and clean up raw data</b>, and 
+										<b>create a dashboard or report</b> to help us understand patterns and trends around power outages
+										in the U.S. between 2002 and 2023.</div></p>
+
+										<div><p>I will be using real data provided by the U.S. Department of Energy that is publically available.
+										</p></div>
+										<br /> 
+										<br /> 
+										<div><p><u><b>D a t a &nbsp;&nbsp;  C l e a n i n g</b></u>
+										<br /> 
+										<div><p>This was easily the biggest data cleaning project I have experienced. The original data set 
+										was seperated by individual year from 2002 - 2023, with each year using different formatting, different header 
+										layouts and different columns.</div></p>
+
+										<div><p>There were multiple variations of time formats in the original dataset that I needed to transform in to a 
+										standardized and uniform format. We see "12:00 p.m.", "noon", "12 noon" amongst other variations. I started by using 
+										the <em>split</em> function to seperate any columns that had date and time in the same cell. I would then like to 
+										set all times to the 24hr clock (hh:mm) so all noon dates would be "12:00". I started by using <em>find & replace</em> 
+										&nbsp;to find any cells with "noon" and replace with "12:00". For any cells with "p.m." in, I again used <em>find & replace</em> 
+										&nbsp;to replace "p.m." with "PM". I was then able to change the number format in Excel to hh:mm which converted it to the 24hr 
+										clock. The same process was used for cells with "a.m.".</div></p>
+
+										<div><p>There were also multiple variations of the date that I needed to transform to a standardized format.
+										We see some dates as "d/m/y", and some as "m/d/y" as well as other variations like "March 04". I would like to 
+										set all dates to the "d/m/y". I started by using <em>Text to Columns</em> &nbsp;to change any "m/d/y" to 
+										"d/m/y". For dates that included text such as "March 04", I used <em>Split</em>&nbsp; to seperate the month 
+										and the day. I then used the formula <em>=MONTH(DATEVALUE(cell&"1"))</em> &nbsp;which turns the month text in to its 
+										corresponding number. E.g. "March" was converted to "3". I then rejoined the day, month and year in correct order.</div></p>
+
+										<div><p>The Type of Disturbance column had a wide variety of answers that needed to be catergorized. I catergorized 
+										each type of disturbance in to one of thirteen catergories based on the Department of Energy's 2023 customer survey. This was 
+										great for analyzing the data as the hundreds of different specific answers for disturbances such as weather were now all categorized 
+										together. E.g. "Hurricane", "Extreme Weatherstorm", "Heavy rain and snowfall" were now all categrorized as "Weather or Natural 
+										Disaster".</div></p>
+
+										<div><p>The NERC region columns also needed to be cleaned due to the regions having changed over time between 2002 and 2023. 
+										I used <em>find & replace</em> &nbsp;again to replace the old regions with the updated 2023 regions.</div></p>
+
+										<div><p>I also added a new column for Event Duration by calculating the difference between when the power outage began, and 
+										when it was restored. I used this data to visualize the average restoration time in each Region and State.</p></div>
+										<br /> 
+										<br /> 
+										<div><p><u><b>D a s h b o a r d</b></u>
+										<br /> 
+										<div><p>I built this dashboard in five sections: Customer's Affected, Number of Power Outages, Causes of Power Outages, 
+										Megawatts Loss and Restoration Time. I kept a consistent colour scheme throughout this report, with each region's data
+										matching the colour of that region from the NERC region map found at the top of the report.</p></div>
+									</br>		
+										<head>
+											<style>
+												* {
+													padding: 0;
+													margin: 0;
+												}
+												.fit { /* set relative picture size */
+													max-width: 100%;
+													max-height: 100%;
+												}
+												.center {
+													display: block;
+													margin: auto;
+												}
+											</style>
+										</head>
+										<body>
+										
+										<img class="center fit" src="images/Power/Customers_affected.png" > 
+										
+										<div><p>For the <em>Customer's Affected</em> &nbsp;section I started by creating a line chart to show the number of customer's 
+											affected in each region over time from 2002 - 2023. I then created a bar chart to get an overall show of the total customer's 
+											affected in each region. I finished this section with a vertical bar chart showing the states with the most customer's affected, 
+											alongside a filled map to visualize this which I created on Tableau.</p></div>
+										</br>
+									</br>
+
+											<head>
+												<style>
+													* {
+														padding: 0;
+														margin: 0;
+													}
+													.fit { /* set relative picture size */
+														max-width: 100%;
+														max-height: 100%;
+													}
+													.center {
+														display: block;
+														margin: auto;
+													}
+												</style>
+											</head>
+											<body>
+											
+											<img class="center fit" src="images/Power/number_power_outages.png" > 
+											
+											<div><p>For the <em>Number of Power Outages</em> &nbsp;section I created a bar chart showing how many individual 
+											power outages each NERC region has had. I then created a vertical bar chart showing which states have experienced the 
+											most power outages.</p></div>
+										</br>
+									</br>
+
+											<head>
+												<style>
+													* {
+														padding: 0;
+														margin: 0;
+													}
+													.fit { /* set relative picture size */
+														max-width: 100%;
+														max-height: 100%;
+													}
+													.center {
+														display: block;
+														margin: auto;
+													}
+												</style>
+											</head>
+											<body>
+											
+											<img class="center fit" src="images/Power/causes_power_outages.png" > 
+											
+											<div><p>For the <em>Causes of Power Outages</em> &nbsp;section I created two line charts showing weather versus non-weather
+											related power outages. The top line chart shows how about half of all power outages are weather related. The bottom line 
+											graph shows that of all large power outages (affecting over 50,000 people), weather is the cause of 96% of them.
+											</p></div>
+											<div><p>I also created pie charts for each NERC region to show the causes of power outages in each specific region. This 
+											was also another way of effectively showing the domincance of weather related power outages.
+											</p></div>
+										</br>
+									</br>
+
+											<head>
+												<style>
+													* {
+														padding: 0;
+														margin: 0;
+													}
+													.fit { /* set relative picture size */
+														max-width: 100%;
+														max-height: 100%;
+													}
+													.center {
+														display: block;
+														margin: auto;
+													}
+												</style>
+											</head>
+											<body>
+											
+											<img class="center fit" src="images/Power/megawatts_loss.png" > 
+
+											<div><p>For the <em>Megawatts Loss</em> &nbsp;section I again created a bar chart and a vertical bar chart for the region and US 
+											states. The first bar chart shows how much Megawatts Loss has happened in each NERC region. The vertical bar chart shows what 
+											states have had the most Megawatts Loss.
+											</p></div>
+
+										</br>
+									</br>
+
+											<head>
+												<style>
+													* {
+														padding: 0;
+														margin: 0;
+													}
+													.fit { /* set relative picture size */
+														max-width: 100%;
+														max-height: 100%;
+													}
+													.center {
+														display: block;
+														margin: auto;
+													}
+												</style>
+											</head>
+											<body>
+											
+											<img class="center fit" src="images/Power/restoration_time.png" > 
+
+											<div><p>For the <em>Restoration Time</em> &nbsp;section I produced a bar chart and vertical chart for region and US states again 
+											to keep a consistent theme in my report. The bar chart shows the restoration time in each NERC region. The vertical bar chart shows 
+											which US states' experience the longest restoration time. In this section I also added an additional bar chart showing the average 
+											restoration time by each year. This was a good visualization of how the restoration has been gradually decreasing over time.
+											</p></div>
+											<br /> 
+											<br /> 
+											<div><p><u><b>F i n d i n g s</b></u>
+											<br /> 
+											<div><p><em>Weather or Natural Disaster</em> &nbsp;is the cause of 46% of all power outages in the US. This goes up to a staggering 96% with 
+											large power outages that affect over 50,000 people. This is clearly the biggest problem to the Department of Energy. 
+											Although you can not control the weather, they could integrate a more weather resistant system. An underground electrical 
+											system would go a long way in mitigating the power outages caused by weather.</p></div>
+
+											<div><p>The total <em>Megawatts Loss</em> comes in at 1.04 million megawatts, this highlight the need to upgrade the current system to 
+											one that reduces this amount of electricity that is going to waste. The majority of Megawatts Loss has come from SERC (374k) and WECC (312k), 
+											which suggests these region's infrastructure may be the most outdated.</p></div>
+
+											<div><p>The biggest <em>States Affected</em> were California, Texas and Michigan. These should be the highest priority for the Department of Energy. 
+											All 3 states were in the top 9 states in Number of Customers Affected, Number of Power Outages, Amount of Megawatts Loss and Average Restoration Time. 
+											This geographical data is good for identifying weak spots where the Department of Energy may want to focus their resources.</p></div>
+
+											<div><p>The average <em>Restoration Time</em> was a good display of how the response to power outages has improved over time. The Average in 
+											2002 was 69 hours, where as in 2023 that had dropped down to an average of just 8 hours for a power outage to be restored. This shows how the 
+											regions have been able to respond to the power outages more efficiently.</p></div>
+										</br>		
+										<br /> 
+										<div><p>
+										<!-- <u><b><em>What I Learnt:</em></b></u>
+										<p>&#8226; How to use Power BI's forecasting capability to predict future results based on your current data.</p>
+										<p>&#8226; How to use an effective colour scheme that highlights the data you want to show.</p>
+										</p></div> -->
+								</ul>
+							</footer>
+				</br>
+			</br>
+		</br>
+	<hr>
+				<!-- Footer -->
+					<footer id="first">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Oslo &bull; Norway</dd>
+								<dt>Phone</dt>
+								<dd>(+44) 7986 240 164</dd>
+								<dt>Phone(Work)</dt>
+								<dd>(+47) 481 92 482</dd>
+								<dt>Email</dt>
+								<dd><a>jtwomey@hotmail.co.uk</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://linkedin.com/in/jack-twomey" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
+								<!--<li><a href="Power BI dashboards.html" target="_blank" class="label">Power BI</span></a></li> -->
+								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</span></a></li>
+							</ul>
+						</section>
+						
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
