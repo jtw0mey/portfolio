@@ -26,12 +26,21 @@
 						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
 					</header>
 
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#first" class="active">Car Showroom</a></li>
+							<li><a href="#second">Big Bank</a></li>
+						</ul>
+					</nav>	
+
 				<!-- Main -->
 					<div id="main">
 
 												<!-- First Section -->
 												<section id="first" class="main">
 													<header class="major">
+														<h2>Tom's Car Showroom <i class="fas fa-car"></i></h2>
 														<!-- <u><b>P r o j e c t </b></u> -->
 														<head>
 															<style>
@@ -51,7 +60,7 @@
 														</head>
 														<body>
 														
-														<img class="center fit" src="images/SQL/car-salesman.png" ><br /> 
+														<img class="center fit" src="images/SQL/Car/car-salesman.png" ><br /> 
 														<br /> 
 														<u><p><b>P r o j e c t </b></u> 
 															<div><p>Tom runs a car showroom and his data analyst has just quit leaving him without crucial insights. 
@@ -91,7 +100,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/SQL/Dataset_tables.png" >
+															<img class="center fit" src="images/SQL/Car/Dataset_tables.png" >
 															<head>
 																<style>
 																	* {
@@ -110,7 +119,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/SQL/SQL_dataset_schema.png" >
+															<img class="center fit" src="images/SQL/Car/SQL_dataset_schema.png" >
 															<p>Three tables have been created for Sales, Cars and Salespersons. I will be using this data to provide answers 
 															to Tom's questions.
 															</p><br> 
@@ -136,7 +145,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/SQL/1_query.png" >
+															<img class="center fit" src="images/SQL/Car/1_query.png" >
 															<br> 
 															<div><p>I <b>selected</b> all the columns from the Cars table. I then used <b>join</b> to combine the 
 															columns from the Sales tables with the Cars table using the mutual <em>car_id</em>&nbsp; column to show 
@@ -159,7 +168,7 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/SQL/1_query_result.png" >
+															<img class="center fit" src="images/SQL/Car/1_query_result.png" >
 															<br> 
 															<br> 
 															<br>
@@ -187,7 +196,7 @@
 																</head>
 																<body>
 																
-																<img class="center fit" src="images/SQL/2_query.png" >
+																<img class="center fit" src="images/SQL/Car/2_query.png" >
 																<br> 
 																<div><p>The total number of cars sold by each salesperson was calculated by <b>counting</b> the number of 
 																sale_id's from the Sales table and <b>joining</b> it with the corresponding name from the Salesperson's 
@@ -210,7 +219,7 @@
 																</head>
 																<body>
 																
-																<img class="center fit" src="images/SQL/2_query_result.png" >
+																<img class="center fit" src="images/SQL/Car/2_query_result.png" >
 																<br> 
 																<br> 
 																<br> 
@@ -238,7 +247,7 @@
 																	</head>
 																	<body>
 																	
-																	<img class="center fit" src="images/SQL/3_query.png" >
+																	<img class="center fit" src="images/SQL/Car/3_query.png" >
 																	<br> 
 																	<div><p>The total revenue by each salesperson was calculated by <b>joining</b> the Sales table and the 
 																	Cars table, we were then able to multiply the car's cost with the amount of cars each salesperson sold. 
@@ -263,7 +272,7 @@
 																	</head>
 																	<body>
 																	
-																	<img class="center fit" src="images/SQL/3_query_result.png" >
+																	<img class="center fit" src="images/SQL/Car/3_query_result.png" >
 																	<br> 
 																	<br> 
 																	<br> 
@@ -291,7 +300,7 @@
 																		</head>
 																		<body>
 																		
-																		<img class="center fit" src="images/SQL/4_query.png" >
+																		<img class="center fit" src="images/SQL/Car/4_query.png" >
 																		<br> 
 																		<div><p>To show the details of the cars sold by each salesperson I had to <b>select</b> columns from 
 																		all three tables. This was done by <b>joining</b> the tables using the mutual <em>salesman_id</em> and 
@@ -315,7 +324,7 @@
 																		</head>
 																		<body>
 																		
-																		<img class="center fit" src="images/SQL/4_query_result.png" >
+																		<img class="center fit" src="images/SQL/Car/4_query_result.png" >
 																		<br> 
 																		<br> 
 																		<br> 
@@ -343,7 +352,7 @@
 																			</head>
 																			<body>
 																			
-																			<img class="center fit" src="images/SQL/5_query.png" >
+																			<img class="center fit" src="images/SQL/Car/5_query.png" >
 																			<br> 
 																			<div><p>The total revenue generated by each car type was calculated by <b>joining</b> the Cars and Sales 
 																			table to be able to combine the car type's cost, with the amount of sales that car type had.
@@ -366,7 +375,7 @@
 																			</head>
 																			<body>
 																			
-																			<img class="center fit" src="images/SQL/5_query_result.png" >
+																			<img class="center fit" src="images/SQL/Car/5_query_result.png" >
 																			<br> 
 																			<br> 
 																			<br> 
@@ -394,7 +403,7 @@
 																				</head>
 																				<body>
 																				
-																				<img class="center fit" src="images/SQL/6_query.png" >
+																				<img class="center fit" src="images/SQL/Car/6_query.png" >
 																				<br> 
 																				<div><p>I displayed the details of the cars sold by Emily Wong by <b>joining</b> all 3 tables using the mutual 
 																				<em>car_id</em>&nbsp; and <em>salesman_id</em>&nbsp; columns. I then <b>select</b> the columns that I wanted 
@@ -418,7 +427,7 @@
 																				</head>
 																				<body>
 																				
-																				<img class="center fit" src="images/SQL/6_query_result.png" >
+																				<img class="center fit" src="images/SQL/Car/6_query_result.png" >
 																				<br> 
 																				<br> 
 																				<br> 
@@ -446,7 +455,7 @@
 																					</head>
 																					<body>
 																					
-																					<img class="center fit" src="images/SQL/7_query.png" >
+																					<img class="center fit" src="images/SQL/Car/7_query.png" >
 																					<br> 
 																					<div><p>I calculated the total revenue generated by hatchback cars by <b>joining</b> the Cars and Sales table 
 																					using the mutual <em>car_id</em>&nbsp; column. I was then able to combine the car's style with how many times 
@@ -470,7 +479,7 @@
 																					</head>
 																					<body>
 																					
-																					<img class="center fit" src="images/SQL/7_query_result.png" >
+																					<img class="center fit" src="images/SQL/Car/7_query_result.png" >
 																					<br> 
 																					<br> 
 																					<br> 
@@ -498,7 +507,7 @@
 																						</head>
 																						<body>
 																						
-																						<img class="center fit" src="images/SQL/8_query.png" >
+																						<img class="center fit" src="images/SQL/Car/8_query.png" >
 																						<br> 
 																						<div><p>I used the same process as question 7, but I updated the <b>where</b> clause to show only SUV
 																						sales in 2022.
@@ -521,7 +530,7 @@
 																						</head>
 																						<body>
 																						
-																						<img class="center fit" src="images/SQL/8_query_result.png" >
+																						<img class="center fit" src="images/SQL/Car/8_query_result.png" >
 																						<br> 
 																						<br> 
 																						<br> 
@@ -549,7 +558,7 @@
 																							</head>
 																							<body>
 																							
-																							<img class="center fit" src="images/SQL/9_query.png" >
+																							<img class="center fit" src="images/SQL/Car/9_query.png" >
 																							<br> 
 																							<div><p>To show the name and city of the salesperson with the most number of cars sold in 2023, I started 
 																							by <b>selecting</b> the name and city columns from the Salespersons table. I then <b>joined</b> 
@@ -574,7 +583,7 @@
 																							</head>
 																							<body>
 																							
-																							<img class="center fit" src="images/SQL/9_query_result.png" >
+																							<img class="center fit" src="images/SQL/Car/9_query_result.png" >
 																							<br> 
 																							<br> 
 																							<br> 
@@ -602,7 +611,7 @@
 																								</head>
 																								<body>
 																								
-																								<img class="center fit" src="images/SQL/10_query.png" >
+																								<img class="center fit" src="images/SQL/Car/10_query.png" >
 																								<br> 
 																								<div><p>To find out the name and age of the salesperson with the highest revenue in 2022 I started by <b>selecting</b> 
 																								the name and age columns from the Salespersons table. To create the total revenue for 2022 column, I had to 
@@ -629,11 +638,596 @@
 																								</head>
 																								<body>
 																								
-																								<img class="center fit" src="images/SQL/10_query_result.png" >
+																								<img class="center fit" src="images/SQL/Car/10_query_result.png" >
+																								<br> 
+																								<br> 
+																								<br> 
+																								<br>
 																								<br> 
 																								<br> 
 																								<br> 
 																								<br> 
+																								<hr>
+																								<hr>
+																								<br> 
+																																			<!-- First Section -->
+												<section id="second" class="main">
+													<header class="major">
+														<h2>The Big Bank <i class="fas fa-landmark"></i></h2>
+														<!-- <u><b>P r o j e c t </b></u> -->
+														<head>
+															<style>
+																* {
+																	padding: 0;
+																	margin: 0;
+																}
+																.fit { /* set relative picture size */
+																	max-width: 100%;
+																	max-height: 100%;
+																}
+																.center {
+																	display: block;
+																	margin: auto;
+																}
+															</style>
+														</head>
+														<body>
+														
+														<img class="center fit" src="images/SQL/Bank/bank_cartoon.jpg" ><br /> 
+														<br /> 
+														<u><p><b>P r o j e c t </b></u> 
+															<div><p>I have been tasked with finding out about The Big Bank's customers and their banking behaviour. 
+															I will examine the customer's accounts data that has been provided and answer the following questions:
+															</p>
+															<div>
+																<ol>
+																<li>What are the names of all the customers who live in New York?</li>
+																<li>What is the total number of bank accounts at The Big Bank?</li>	
+																<li>What is the total balance of all checking accounts?</li>
+																<li>What is the total balance of all customers who live in Los Angeles?</li>
+																<li>In Los Angeles, what branches did customers open accounts in?</li>
+																<li>Which branch has the highest average account balance?</li>
+																<li>Which branch has the highest total balance across all of its accounts?</li>	
+																<li>Which branch has the highest number of transactions?</li>
+																<li>Which customer has the highest number of transactions?</li>			
+																<li>Which customer has the highest current balance in all of their accounts?</li>
+																</ol>
+																</div><br /> 
+																<br /> 
+															<u><p><b>D a t a s e t </b></u> 
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/SQL/Bank/Dataset_screenshot.png" >
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/SQL/Bank/Dataset.png" >
+															<p>Four tables have been created for Customers, Accounts, Transactions and Branches. I will be using this data 
+															to provide answers to The Big Bank's questions.
+															</p><br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p><b><u>1. What are the names of all the customers who live in New York?</u></b></p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/SQL/Bank/1_query.png" >
+															<br> 
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/SQL/Bank/1_query_result.png" >
+															<br> 
+															<br> 
+															<br>
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<hr>
+															<div><p><b><u>2. What is the total number of bank accounts at The Big Bank?</u></b></p>
+																<head>
+																	<style>
+																		* {
+																			padding: 0;
+																			margin: 0;
+																		}
+																		.fit { /* set relative picture size */
+																			max-width: 100%;
+																			max-height: 100%;
+																		}
+																		.center {
+																			display: block;
+																			margin: auto;
+																		}
+																	</style>
+																</head>
+																<body>
+																
+																<img class="center fit" src="images/SQL/Bank/2_query.png" >
+																<br> 
+																<head>
+																	<style>
+																		* {
+																			padding: 0;
+																			margin: 0;
+																		}
+																		.fit { /* set relative picture size */
+																			max-width: 100%;
+																			max-height: 100%;
+																		}
+																		.center {
+																			display: block;
+																			margin: auto;
+																		}
+																	</style>
+																</head>
+																<body>
+																
+																<img class="center fit" src="images/SQL/Bank/2_query_result.png" >
+																<br> 
+																<br> 
+																<br> 
+																<br> 
+																<br> 
+																<br> 
+																<br> 
+																<hr>
+																<div><p><b><u>3. What is the total balance of all checking accounts?</u></b></p>
+																	<head>
+																		<style>
+																			* {
+																				padding: 0;
+																				margin: 0;
+																			}
+																			.fit { /* set relative picture size */
+																				max-width: 100%;
+																				max-height: 100%;
+																			}
+																			.center {
+																				display: block;
+																				margin: auto;
+																			}
+																		</style>
+																	</head>
+																	<body>
+																	
+																	<img class="center fit" src="images/SQL/Bank/3_query.png" >
+																	<br> 
+																	<head>
+																		<style>
+																			* {
+																				padding: 0;
+																				margin: 0;
+																			}
+																			.fit { /* set relative picture size */
+																				max-width: 100%;
+																				max-height: 100%;
+																			}
+																			.center {
+																				display: block;
+																				margin: auto;
+																			}
+																		</style>
+																	</head>
+																	<body>
+																	
+																	<img class="center fit" src="images/SQL/Bank/3_query_result.png" >
+																	<br> 
+																	<br> 
+																	<br> 
+																	<br> 
+																	<br> 
+																	<br> 
+																	<br> 
+																	<hr>
+																	<div><p><b><u>4. What is the total balance of all customers who live in Los Angeles?</u></b></p>
+																		<head>
+																			<style>
+																				* {
+																					padding: 0;
+																					margin: 0;
+																				}
+																				.fit { /* set relative picture size */
+																					max-width: 100%;
+																					max-height: 100%;
+																				}
+																				.center {
+																					display: block;
+																					margin: auto;
+																				}
+																			</style>
+																		</head>
+																		<body>
+																		
+																		<img class="center fit" src="images/SQL/Bank/4_query.png" >
+																		<br> 
+																		<head>
+																			<style>
+																				* {
+																					padding: 0;
+																					margin: 0;
+																				}
+																				.fit { /* set relative picture size */
+																					max-width: 100%;
+																					max-height: 100%;
+																				}
+																				.center {
+																					display: block;
+																					margin: auto;
+																				}
+																			</style>
+																		</head>
+																		<body>
+																		
+																		<img class="center fit" src="images/SQL/Bank/4_query_result.png" >
+																		<br> 
+																		<br> 
+																		<br> 
+																		<br> 
+																		<br> 
+																		<br> 
+																		<br> 
+																		<hr>
+																		<div><p><b><u>5. In Los Angeles, what branches did customers open accounts in?</u></b></p>
+																			<head>
+																				<style>
+																					* {
+																						padding: 0;
+																						margin: 0;
+																					}
+																					.fit { /* set relative picture size */
+																						max-width: 100%;
+																						max-height: 100%;
+																					}
+																					.center {
+																						display: block;
+																						margin: auto;
+																					}
+																				</style>
+																			</head>
+																			<body>
+																			
+																			<img class="center fit" src="images/SQL/Bank/11_query.png" >
+																			<br>
+																			<div><p>In Los Angeles, Jennifer Wang opened two accounts in the Downtown branch and Michael Lee opened 
+																			two accounts in the North Beach branch.
+																			</p> 
+																			<head>
+																				<style>
+																					* {
+																						padding: 0;
+																						margin: 0;
+																					}
+																					.fit { /* set relative picture size */
+																						max-width: 100%;
+																						max-height: 100%;
+																					}
+																					.center {
+																						display: block;
+																						margin: auto;
+																					}
+																				</style>
+																			</head>
+																			<body>
+																			
+																			<img class="center fit" src="images/SQL/Bank/11_query_result.png" >
+																			<br> 
+																			<br> 
+																			<br> 
+																			<br> 
+																			<br> 
+																			<br> 
+																			<br> 
+																			<hr>
+																			<div><p><b><u>6. Which branch has the highest average account balance?</u></b></p>
+																				<head>
+																					<style>
+																						* {
+																							padding: 0;
+																							margin: 0;
+																						}
+																						.fit { /* set relative picture size */
+																							max-width: 100%;
+																							max-height: 100%;
+																						}
+																						.center {
+																							display: block;
+																							margin: auto;
+																						}
+																					</style>
+																				</head>
+																				<body>
+																				
+																				<img class="center fit" src="images/SQL/bank/5_query.png" >
+																				<br> 
+																				<div><p>The North Beach branch in Los Angeles had the highest average account balance with $30,000.
+																				</p>
+																				<head>
+																					<style>
+																						* {
+																							padding: 0;
+																							margin: 0;
+																						}
+																						.fit { /* set relative picture size */
+																							max-width: 100%;
+																							max-height: 100%;
+																						}
+																						.center {
+																							display: block;
+																							margin: auto;
+																						}
+																					</style>
+																				</head>
+																				<body>
+																				
+																				<img class="center fit" src="images/SQL/bank/5_query_result.png" >
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<hr>
+																			<div><p><b><u>7. Which branch has the highest total balance across all of its accounts?</u></b></p>
+																				<head>
+																					<style>
+																						* {
+																							padding: 0;
+																							margin: 0;
+																						}
+																						.fit { /* set relative picture size */
+																							max-width: 100%;
+																							max-height: 100%;
+																						}
+																						.center {
+																							display: block;
+																							margin: auto;
+																						}
+																					</style>
+																				</head>
+																				<body>
+																				
+																				<img class="center fit" src="images/SQL/bank/8_query.png" >
+																				<br> 
+																				<div><p>The North Beach branch also had the highest total balance with $60,000.
+																				</p>
+																				<head>
+																					<style>
+																						* {
+																							padding: 0;
+																							margin: 0;
+																						}
+																						.fit { /* set relative picture size */
+																							max-width: 100%;
+																							max-height: 100%;
+																						}
+																						.center {
+																							display: block;
+																							margin: auto;
+																						}
+																					</style>
+																				</head>
+																				<body>
+																				
+																				<img class="center fit" src="images/SQL/bank/8_query_result.png" >
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<br> 
+																				<hr>
+																				<div><p><b><u>8. Which branch has the highest number of transactions?</u></b></p>
+																					<head>
+																						<style>
+																							* {
+																								padding: 0;
+																								margin: 0;
+																							}
+																							.fit { /* set relative picture size */
+																								max-width: 100%;
+																								max-height: 100%;
+																							}
+																							.center {
+																								display: block;
+																								margin: auto;
+																							}
+																						</style>
+																					</head>
+																					<body>
+																					
+																					<img class="center fit" src="images/SQL/bank/10_query.png" >
+																					<br> 
+																					<div><p>The South Bay and Main branches have had the highest number of transactions with 4.
+																					</p>
+																					<head>
+																						<style>
+																							* {
+																								padding: 0;
+																								margin: 0;
+																							}
+																							.fit { /* set relative picture size */
+																								max-width: 100%;
+																								max-height: 100%;
+																							}
+																							.center {
+																								display: block;
+																								margin: auto;
+																							}
+																						</style>
+																					</head>
+																					<body>
+																					
+																					<img class="center fit" src="images/SQL/bank/10_query_result.png" >
+																					<br> 
+																					<br> 
+																					<br> 
+																					<br> 
+																					<br> 
+																					<br>
+																					<br> 
+																					<hr>
+																					<div><p><b><u>9. Which customer has the highest number of transactions?</u></b></p>
+																						<head>
+																							<style>
+																								* {
+																									padding: 0;
+																									margin: 0;
+																								}
+																								.fit { /* set relative picture size */
+																									max-width: 100%;
+																									max-height: 100%;
+																								}
+																								.center {
+																									display: block;
+																									margin: auto;
+																								}
+																							</style>
+																						</head>
+																						<body>
+																						
+																						<img class="center fit" src="images/SQL/bank/7_query.png" >
+																						<br> 
+																						<div><p>Alice Johnson and Jane Doe have had the highest number of transactions with 4.
+																						</p>
+																						<head>
+																							<style>
+																								* {
+																									padding: 0;
+																									margin: 0;
+																								}
+																								.fit { /* set relative picture size */
+																									max-width: 100%;
+																									max-height: 100%;
+																								}
+																								.center {
+																									display: block;
+																									margin: auto;
+																								}
+																							</style>
+																						</head>
+																						<body>
+																						
+																						<img class="center fit" src="images/SQL/bank/7_query_result.png" >
+																						<br> 
+																						<br> 
+																						<br> 
+																						<br> 
+																						<br> 
+																						<br>  
+																						<br> 
+																						<hr>
+																						<div><p><b><u>10. Which customer has the highest current balance in all of their accounts?</u></b></p>
+																							<head>
+																								<style>
+																									* {
+																										padding: 0;
+																										margin: 0;
+																									}
+																									.fit { /* set relative picture size */
+																										max-width: 100%;
+																										max-height: 100%;
+																									}
+																									.center {
+																										display: block;
+																										margin: auto;
+																									}
+																								</style>
+																							</head>
+																							<body>
+																							
+																							<img class="center fit" src="images/SQL/bank/6_query.png" >
+																							<br> 
+																							<div><p>Michael Lee is the customer with the highest balance with a total of $60,000 across his accounts.
+																							</p>
+																							<head>
+																								<style>
+																									* {
+																										padding: 0;
+																										margin: 0;
+																									}
+																									.fit { /* set relative picture size */
+																										max-width: 100%;
+																										max-height: 100%;
+																									}
+																									.center {
+																										display: block;
+																										margin: auto;
+																									}
+																								</style>
+																							</head>
+																							<body>
+																							
+																							<img class="center fit" src="images/SQL/bank/6_query_result.png" >
+																							<br> 
+																							<br> 
+																							<br> 
+																							<br> 
 																						
 															
 				</li>
