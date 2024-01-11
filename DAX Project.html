@@ -55,6 +55,8 @@
 									<img class="center fit" src="images/DAX/Dashboard.png" >
 									<a href="Oslo FC - DAX Dataset.xlsx" > <em>Dataset here</em></a><br />
 									<br /> 
+									<br /> 
+									<br /> 
 									<u><p><b>P r o j e c t </b></u> 
 										<div><p>For this project I will be using <b>Power BI's DAX language to create a sales report</b> 
 										for a fictional football team, "Oslo FC". I will be displaying merchandise sales data from four 
@@ -84,6 +86,10 @@
 										<br /> 
 										<br /> 
 										<br /> 
+										<br /> 
+										<br /> 
+										<br /> 
+										<br /> 
 										<div><p>The second table contains sales data of what merchandise each store has sold. A subset of the table is here:</div></p>
 											<head>
 												<style>
@@ -104,6 +110,10 @@
 											<body>
 											
 											<img class="center fit" src="images/DAX/Customer_Sales.png" >  
+										<br /> 
+										<br /> 
+										<br /> 
+										<br /> 
 										<br /> 
 										<br /> 
 										<br /> 
@@ -136,6 +146,9 @@
 											<br>  
 											<br> 
 											<br>  
+											<br> 
+											<br>  
+											<br> 
 										<div><p>I started by creating a <em>Count of Sales </em> &nbsp;column to show how many 
 										individual merchandise orders each store is making using the <em>COUNT</em> &nbsp;function. I was then able to create 
 										the table and bar chart below.</div></p>
@@ -157,32 +170,15 @@
 										</head>
 										<body>
 										
-										<img class="center fit" src="images/DAX/1_DAX_Count_of_Sales.png" > 
-										<br> 
-										<br> 
-										<head>
-											<style>
-												* {
-													padding: 0;
-													margin: 0;
-												}
-												.fit { /* set relative picture size */
-													max-width: 100%;
-													max-height: 100%;
-												}
-												.center {
-													display: block;
-													margin: auto;
-												}
-											</style>
-										</head>
-										<body>
-										
-										<img class="center fit" src="images/DAX/1_Count_of_Sales.png" ></p><br> 
+										<img class="center fit" src="images/DAX/1_combined.jpg" > 
 										<br> 
 										<br> 
 										<br> 
-										<br>  
+										<br> 
+										<br> 
+										<br> 
+										<br> 
+										<br> 
 										<div><p>I then used the formula below to create a <em>Products Sold</em> &nbsp;column. This was done by totaling 
 											the <em>Units Sold</em> &nbsp;using the <em>SUM</em> &nbsp;function. This combined the Product Name from the 
 											Football Store table, and the Products Sold from the Football Sales table using the joint product ID.</div></p>
@@ -204,32 +200,15 @@
 											</head>
 											<body>
 											
-											<img class="center fit" src="images/DAX/2_DAX_Sum_of_Products_Sold.png" > 
-											<br> 
-											<br> 
-											<head>
-												<style>
-													* {
-														padding: 0;
-														margin: 0;
-													}
-													.fit { /* set relative picture size */
-														max-width: 100%;
-														max-height: 100%;
-													}
-													.center {
-														display: block;
-														margin: auto;
-													}
-												</style>
-											</head>
-											<body>
-											
-											<img class="center fit" src="images/DAX/2_Sum_of_Products_Sold.png" ></p><br>
+											<img class="center fit" src="images/DAX/2_combined.jpg" > 
 											<br> 
 											<br> 
 											<br> 
-											<br>  
+											<br> 
+											<br> 
+											<br> 
+											<br> 
+											<br>   
 											<div><p>I then wanted to create a <em>Profit Column</em> &nbsp;for each merchandise item. I first tried a simple 
 											equation of Price minus Product cost, multiplied by Units Sold. This was the <b>wrong</b> equation as it produced 
 											the same result for each row. This was because the equation was multiplied by the sum off all Units Sold, rather 
@@ -252,30 +231,13 @@
 												</head>
 												<body>
 												
-												<img class="center fit" src="images/DAX/4_DAX_wrong_product_profit.png" > 
+												<img class="center fit" src="images/DAX/4_combined.jpg" > 
 												<br> 
 												<br> 
-												<head>
-													<style>
-														* {
-															padding: 0;
-															margin: 0;
-														}
-														.fit { /* set relative picture size */
-															max-width: 100%;
-															max-height: 100%;
-														}
-														.center {
-															display: block;
-															margin: auto;
-														}
-													</style>
-												</head>
-												<body>
-												
-												<img class="center fit" src="images/DAX/4_wrong_product_profit.png" ></p><br> 
 												<br> 
 												<br> 
+												<br> 
+												<br>  
 												<br> 
 												<br>  
 												<div><p>This <em>Profit Column</em> &nbsp;was corrected by using <em>SUMX</em> &nbsp;to run this equation on each 
@@ -299,30 +261,13 @@
 													</head>
 													<body>
 													
-													<img class="center fit" src="images/DAX/5_DAX_product_profit.png" > 
+													<img class="center fit" src="images/DAX/5_combined.jpg" > 
 													<br> 
 													<br> 
-													<head>
-														<style>
-															* {
-																padding: 0;
-																margin: 0;
-															}
-															.fit { /* set relative picture size */
-																max-width: 100%;
-																max-height: 100%;
-															}
-															.center {
-																display: block;
-																margin: auto;
-															}
-														</style>
-													</head>
-													<body>
-													
-													<img class="center fit" src="images/DAX/5_product_profit.png" ></p><br> 
 													<br> 
 													<br> 
+													<br> 
+													<br>  
 													<br> 
 													<br>  
 													<div><p>Using <em>SUMX</em> &nbsp;again, I was also able to create the table and bar chart below for <em>Profit by 
@@ -345,32 +290,15 @@
 														</head>
 														<body>
 														
-														<img class="center fit" src="images/DAX/3_DAX_Profit_by_customer.png" > 
-														<br> 
-														<br> 
-														<head>
-															<style>
-																* {
-																	padding: 0;
-																	margin: 0;
-																}
-																.fit { /* set relative picture size */
-																	max-width: 100%;
-																	max-height: 100%;
-																}
-																.center {
-																	display: block;
-																	margin: auto;
-																}
-															</style>
-														</head>
-														<body>
-														
-														<img class="center fit" src="images/DAX/3_Profit_by_customer.png" ></p><br>
+														<img class="center fit" src="images/DAX/3_combined.jpg" > 
 														<br> 
 														<br> 
 														<br> 
 														<br> 
+														<br> 
+														<br> 
+														<br> 
+														<br>  
 														<div><p>Next, I wanted to create a <em>Weekday</em> &nbsp;column to be able to visualize sales by day of the week. 
 														I used the <em>Weekday</em> function to transform the Date Purchased column in to the number representing the day 
 														of the week. 1 = Monday, 2 = Tuesday etc. I was then able to create the table and bar chart below which showed us 
@@ -393,53 +321,15 @@
 															</head>
 															<body>
 															
-															<img class="center fit" src="images/DAX/6_DAX_weekday.png" > 
+															<img class="center fit" src="images/DAX/6_combined.jpg" > 
 															<br> 
 															<br> 
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/DAX/6_weekday.png" >
-															<br> 
-															<br> 
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/DAX/6_weekday_graph.png" ></p><br>
 															<br> 
 															<br>
 															<br> 
-															<br>  
+															<br> 
+															<br> 
+															<br>   
 															<div><p>I then wanted to create a column that designates each sale to either a <em>Big Order</em> &nbsp;or a <em>Small Order</em> 
 															&nbsp;based on whether the sale had over/under 30 units sold. For this I used an <em>IF</em> &nbsp;function as seen below.</div></p>
 																<head>
@@ -460,32 +350,15 @@
 																</head>
 																<body>
 																
-																<img class="center fit" src="images/DAX/7_DAX_order_size.png" > 
+																<img class="center fit" src="images/DAX/7_combined.jpg" > 
 																<br> 
 																<br> 
-																<head>
-																	<style>
-																		* {
-																			padding: 0;
-																			margin: 0;
-																		}
-																		.fit { /* set relative picture size */
-																			max-width: 100%;
-																			max-height: 100%;
-																		}
-																		.center {
-																			display: block;
-																			margin: auto;
-																		}
-																	</style>
-																</head>
-																<body>
-																
-																<img class="center fit" src="images/DAX/7_order_size.png" ></p><br>
 																<br> 
 																<br>
 																<br> 
-																<br>  
+																<br> 
+																<br> 
+																<br>   
 																<div><p>Combining all of these tables and bar charts, I was able to create this sales report in Power BI for Oslo FC:</div></p>
 																	<head>
 																		<style>
