@@ -46,11 +46,11 @@
 														<br> <p>
 														<!-- <u><b>P r o j e c t </b></u> -->
 															<div><p><b>In this project I will be exploring a dataset consisting of teleheath usage in the USA. 
-															I will start by using SQL to execute queries on the dataset to retrieve specific insights before 
+															I will start by using SQL to execute queries to retrieve specific insights before 
 															visualizing the data using Tableau.
 															</b>This dataset is provided by the US government and is intended for public access and use.</p>
 															<div><p>After uploading the dataset to google's BigQuery, I executed a query to find out which state has 
-															the highest usage of telehealth services.
+															used the most telehealth services.
 															</p>
 															<head>
 																<style>
@@ -92,7 +92,101 @@
 															
 															<img class="center fit" src="images/Telehealth/1 Result - Users by State.png" >
 															<br>
-															<p>California is by some distance the largest user of telehealth services with 48m, followed by Massachusetts with 16m.</p><br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p>After seeing California's 482m so far ahead of the rest of the pack, I wanted 
+															to see how the results would look if we took each state's population in to consideration. I retrieved the 
+															population data from the <a href="https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-total.html" target="_blank">  <em>US census website</em></a>&nbsp; 
+															and uploaded it to SQL.<br></p>														
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/1.5 Query - Users by state and population.png" >
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/1.6 Query - abbreviated.png" >
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/1.6 Result - Users by state and Pop.png" >
+															<br>
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p>When we order the table by the <em>Uses divided by Population</em>&nbsp; column, we are presented with 
+																a new angle where California moves down to 15th in the list.</p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/1.7 Result - Users by state and Pop and Ordered.png" >
+															<br>
+															<br>
 															<br> 
 															<br> 
 															<br> 
@@ -138,15 +232,15 @@
 															
 															<img class="center fit" src="images/Telehealth/2 Result - Users by Year.png" >
 															<br>
-															<p>Here we see a large rise in users between 2019 - 2020, jumping from 3m to over 100m. This coinsides with the Covid-19 breakout
-															which led to lockdowns and telehealth usage booming.</p><br> 
+															<!-- <p>Here we see a large rise in users between 2019 - 2020, jumping from 3m to over 100m. This coinsides with the Covid-19 breakout
+															which led to lockdowns and telehealth usage booming.</p><br> -->
 															<br> 
 															<br> 
 															<br> 
 															<br> 
 															<br> 
 															<br> 
-															<div><p>Next I looked at how many times each telehealth service was being used.</p>
+															<div><p>Next I looked at how many times each telehealth service is being used.</p>
 															<head>
 																<style>
 																	* {
@@ -187,9 +281,9 @@
 															
 															<img class="center fit" src="images/Telehealth/3 Result - Users by Telehealth Type.png" >
 															<br>
-															<p>Live audio/video is the dominant servce with it being used 292m times, followed by Store and Forward services
-															which were only used 3m times.
-															</p><br> 
+															<!-- <p>Live audio/video is the dominant servce with it being used 292m times, followed by Store and Forward services
+															which were only used 2m times.
+															</p><br> -->
 															<br> 
 															<br> 
 															<br> 
@@ -237,12 +331,13 @@
 															
 															<img class="center fit" src="images/Telehealth/4 Result - Users by telehealth type with percent.png" >
 															<br>
-															<p>The dominance of the Live audio/video service is further highlighted with it being responsible for 98.5% of usage. 
+															<!-- <p>The dominance of the Live audio/video service is further highlighted with it being responsible for 98.5% of usage.</p><br> -->
 															<br> 
 															<br> 
 															<br> 
 															<br> 
-															<br> 
+															<br>
+															<hr> 
 															<br> 
 															<div><p>I then created two dashboards using Tableau to visualize this data. The first dashboard is an overall summary of the 
 															data and the second dashboard focusing on the 2022 data vs the previous year. I was able to use line graphs,
