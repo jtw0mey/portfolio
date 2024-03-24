@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<li><a href="index.html" class="button">Home</a></li>
+		<title>Teleheath Data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Eyr Project</h1>
+						<p>SQL & Tableau<br>
+						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
+					</header>
+
+								<!-- Nav 
+								<nav id="nav">
+									<ul>
+										<li><a href="#first" class="active">Avocado Prices</a></li>
+										<li><a href="#second">Palmer Penguins</a></li>
+									</ul>
+								</nav>	-->
+
+
+				<!-- Main -->
+					<div id="main">
+
+												<!-- First Section -->
+												<section id="first" class="main">
+													<header class="major">
+														<h2>Teleheath usage in USA <i class="fas fa-hand-holding-medical"></i></h2>
+														<a href="https://catalog.data.gov/dataset/telehealth-services-provided-to-the-medicaid-and-chip-population-6e74d" target="_blank">  <em>Dataset here</em></a><br> 
+														<br> <p>
+														<!-- <u><b>P r o j e c t </b></u> -->
+															<div><p><b>In this project I will be exploring a dataset consisting of teleheath usage in the USA. 
+															I will start by using SQL to execute queries on the dataset to retrieve specific insights before 
+															visualizing the data using Tableau.
+															</b>This dataset is provided by the US government and is intended for public access and use.</p>
+															<div><p>After uploading the dataset to google's BigQuery, I executed a query to find out which state has 
+															the highest usage of telehealth services.
+															</p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/1 Query - Users by State.png" >
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/1 Result - Users by State.png" >
+															<br>
+															<p>California is by some distance the largest user of telehealth services with 48m, followed by Massachusetts with 16m.</p><br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p>I then took a look at the number of telehealth services used by year.</p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/2 Query - Users by Year.png" >
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/2 Result - Users by Year.png" >
+															<br>
+															<p>Here we see a large rise in users between 2019 - 2020, jumping from 3m to over 100m. This coinsides with the Covid-19 breakout
+															which led to lockdowns and telehealth usage booming.</p><br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p>Next I looked at how many times each telehealth service was being used.</p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/3 Query - Users by Telehealth Type.png" >
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/3 Result - Users by Telehealth Type.png" >
+															<br>
+															<p>Live audio/video is the dominant servce with it being used 292m times, followed by Store and Forward services
+															which were only used 3m times.
+															</p><br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p>I then ammended this query so it also showed the percentage of total uses each service had.</p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/4 Query - Users by teleheath type with percent.png" >
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+															
+															<img class="center fit" src="images/Telehealth/4 Result - Users by telehealth type with percent.png" >
+															<br>
+															<p>The dominance of the Live audio/video service is further highlighted with it being responsible for 98.5% of usage. 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<br> 
+															<div><p>I then created two dashboards using Tableau to visualize this data. The first dashboard is an overall summary of the 
+															data and the second dashboard focusing on the 2022 data vs the previous year. I was able to use line graphs,
+															bar graphs, maps, and heatmap tables to visualize this dataset.
+															</p>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+																<a target="_blank" href="https://public.tableau.com/app/profile/jack.twomey/vizzes">
+															<img class="center fit" src="images/Telehealth/Dashboard1.png" >
+															<br>
+															<br>
+															<br>
+															<br>
+															<head>
+																<style>
+																	* {
+																		padding: 0;
+																		margin: 0;
+																	}
+																	.fit { /* set relative picture size */
+																		max-width: 100%;
+																		max-height: 100%;
+																	}
+																	.center {
+																		display: block;
+																		margin: auto;
+																	}
+																</style>
+															</head>
+															<body>
+																<a target="_blank" href="https://public.tableau.com/app/profile/jack.twomey/vizzes">
+															<img class="center fit" src="images/Telehealth/Dashboard2.png" >
+							</footer>
+						<br>
+					<br>
+				<br>
+			<br>
+		<br>
+	<hr>
+				<!-- Footer -->
+					<footer id="first">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Oslo &bull; Norway</dd>
+								<dt>Phone</dt>
+								<dd>(+44) 7986 240 164</dd>
+								<dt>Phone(Work)</dt>
+								<dd>(+47) 481 92 482</dd>
+								<dt>Email</dt>
+								<dd><a>jtwomey@hotmail.co.uk</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://linkedin.com/in/jack-twomey" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
+								<!--<li><a href="Power BI dashboards.html" target="_blank" class="label">Power BI</span></a></li> -->
+								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</span></a></li>
+							</ul>
+						</section>
+						
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
