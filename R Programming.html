@@ -20,18 +20,20 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><i class="fa fa-keyboard fa-2x"></i></span>
+						<span class="logo"><i class="fas fa-lemon fa-2x"></i></span>
 						<h1>Avocado Prices in the US</h1>
 						<p>Data Visualization & Analysis using R Programming</p>
 					</header>
 
-				<!-- Nav -->
+				<!-- Nav Bar (Greyed / Commented Out) -->
+				<!--
 					<nav id="nav">
 						<ul>
 							<li><a href="#first" class="active">Avocado Prices</a></li>
-							<!-- <li><a href="#second">Palmer Penguins</a></li> -->
+							<li><a href="#second">Palmer Penguins</a></li>
 						</ul>
 					</nav>
+				-->
 
 				<!-- Main -->
 					<div id="main">
@@ -39,7 +41,7 @@
 						<!-- First Section: Avocado Prices -->
 							<section id="first" class="main">
 								<header class="major">
-									<h2>Avocado Prices Analysis <i class="fa fa-lemon-o"></i></h2>
+									<h2>Avocado Prices Analysis <i class="fas fa-chart-line"></i></h2>
 									<p><strong>Tools:</strong> R (ggplot2, dplyr, ggthemes) &nbsp;|&nbsp; <strong>Data Sources:</strong> US Avocado Market Dataset</p>
 								</header>
 
@@ -82,12 +84,12 @@
 
 									<h3>Key Findings & Analysis</h3>
 									<ul>
-										<li><strong>Regional Price Disparities:</strong> The <strong>Northeast</strong> consistently experienced the highest average prices, whereas the <strong>West</strong> recorded the lowest. This is primarily driven by U.S. reliance on Mexican avocado imports (1.3M metric tons imported vs. 156k metric tons produced domestically in 2022). Shorter supply routes to the West keep transportation costs significantly lower.</li>
-										<li><strong>Domestic Production Impact:</strong> Most U.S.-grown avocados originate in California. Proximity to local crops further reduces costs for Western states compared to the distant Northeast market.</li>
-										<li><strong>Supply Chain Disruptions & Price Spikes:</strong>
+										<li><strong>Regional Price Disparities:</strong> As visualized in the 5-region line chart, the <strong>Northeast</strong> (solid blue line) consistently maintained the highest average price per unit across the entire timeframe, peaking near <strong>$1.80</strong> in late 2017[cite: 12]. Conversely, the <strong>West</strong> (dashed orange line) recorded the lowest overall prices, dipping under <strong>$1.00</strong> in early 2016 and 2017[cite: 12].</li>
+										<li><strong>Supply Chain & Logistics Impact:</strong> This gap is largely driven by U.S. reliance on Mexican imports (1.3M metric tons imported vs. 156k metric tons produced domestically in 2022). Proximity to Mexican borders and local California production keeps West Coast transportation and freight costs substantially lower than in the Northeast.</li>
+										<li><strong>Market Shocks & Price Peaks:</strong>
 											<ul>
-												<li><strong>Late 2016 Peak:</strong> A major supply disruption occurred in October 2016 due to <a href="https://www.dallasnews.com/business/local-companies/2016/10/28/strikes-in-mexico-lead-to-avocado-shortage-increased-prices-in-dallas/" target="_blank">producers striking in Mexico</a>, causing prices to surge across several U.S. markets.</li>
-												<li><strong>2017 Peak:</strong> Reduced harvest yields in both <a href="https://www.bbc.com/news/business-39768480" target="_blank">Mexico and California</a> during mid-to-late 2017 drove another substantial price spike.</li>
+												<li><strong>Late 2016 Strike Peak:</strong> A sudden price spike across all regions occurred in October 2016 due to <a href="https://www.dallasnews.com/business/local-companies/2016/10/28/strikes-in-mexico-lead-to-avocado-shortage-increased-prices-in-dallas/" target="_blank">producers striking in Mexico</a>, tripling wholesale prices in certain U.S. cities[cite: 12].</li>
+												<li><strong>Late 2017 Yield Deficit:</strong> Lower harvest yields in both <a href="https://www.bbc.com/news/business-39768480" target="_blank">Mexico and California</a> during 2017 drove a second sharp surge where all regions briefly converged near peak price levels[cite: 12].</li>
 											</ul>
 										</li>
 									</ul>
@@ -95,8 +97,8 @@
 									<hr />
 
 									<h3>Additional Visualization: Regional Lollipop Chart</h3>
-									<p>I also built a lollipop chart to display the overall average price by region. The lollipop design draws visual focus directly to each region's specific price point.</p>
-									<p>Using <code>dplyr</code>'s <code>mutate()</code> and <code>tidyverse</code>'s <code>fct_reorder()</code>, I calculated regional averages and ordered them sequentially. I plotted the initial axes, flipped them using <code>coord_flip()</code>, added slight jittering with <code>geom_jitter()</code>, and constructed the lollipop stems from an overall baseline using <code>geom_hline()</code> and <code>geom_segment()</code>.</p>
+									<p>I also built a lollipop chart to display the overall average price by region relative to the overall national average (vertical reference line at approximately <strong>$1.43</strong>)[cite: 13].</p>
+									<p>Using <code>dplyr</code>'s <code>mutate()</code> and <code>tidyverse</code>'s <code>fct_reorder()</code>, I calculated regional averages and ordered them sequentially[cite: 13]. The Northeast sits furthest to the right of the national mean line, while the West sits furthest to the left[cite: 13]. I plotted the initial axes, flipped them using <code>coord_flip()</code>, added slight jittering with <code>geom_jitter()</code>, and constructed the lollipop stems using <code>geom_hline()</code> and <code>geom_segment()</code>[cite: 13].</p>
 									<span class="image main"><img src="images/Avo/comb_lollipop_graph.jpg" alt="Avocado Regional Lollipop Chart" /></span>
 
 									<hr />
@@ -115,7 +117,7 @@
 						<!--
 							<section id="second" class="main">
 								<header class="major">
-									<h2>Palmer Penguins <i class="fa fa-kiwi-bird"></i></h2>
+									<h2>Palmer Penguins <i class="fas fa-kiwi-bird"></i></h2>
 									<a href="Palmer_penguin_data.xlsx"><em>Original Dataset here</em></a>
 								</header>
 
