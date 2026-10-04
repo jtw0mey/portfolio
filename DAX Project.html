@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<li><a href="index.html" class="button">Home</a></li>
-		<title>Power BI DAX Project</title>
+		<title>Sales Report using DAX</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,395 +20,95 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<span class="logo"><i class="fas fa-calculator fa-2x"></i></span>
 						<h1>Sales Report using DAX</h1>
-						<p>Power BI<br />
-						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
+						<p>Power BI Data Modelling & Visualisation</p>
 					</header>
-
 
 				<!-- Main -->
 					<div id="main">
 
-
 						<!-- First Section -->
 							<section id="first" class="main">
 								<header class="major">
-									<head>
-										<style>
-											* {
-												padding: 0;
-												margin: 0;
-											}
-											.fit { /* set relative picture size */
-												max-width: 100%;
-												max-height: 100%;
-											}
-											.center {
-												display: block;
-												margin: auto;
-											}
-										</style>
-									</head>
-									<body>
+									<h2>Oslo FC Sales Analysis <i class="fas fa-futbol"></i></h2>
+									<p><strong>Tools:</strong> Power BI (DAX) | Excel &nbsp;|&nbsp; <strong>Data Sources:</strong> Oslo FC Merchandise & Sales Dataset</p>
+								</header>
+
+								<div class="content">
+									<h3>Project Overview</h3>
+									<p>For this project, I used Power BI's Data Analysis Expressions (DAX) language to build a dynamic sales report for a fictional football team, <strong>Oslo FC</strong>. The report analyses merchandise sales across four retail sports stores that stock official Oslo FC products.</p>
 									
-									<!-- <img class="center fit" src="images/DAX/Dashboard.png" > -->
-									<h2>Oslo FC <i class="fas fa-futbol"></i></h2><br>
-									<u><p><b>P r o j e c t </b></u> 
-										<div><p><b>For this project I will be using Power BI's DAX language to create a sales report
-										for a fictional football team, "Oslo FC".</b>  I will be displaying merchandise sales data from four 
-										sports stores that stock Oslo FC merchandise.</div></p>
-										<div><p>The dataset contains two tables. The first table contains each item of Oslo FC merchandise 
-										with its price and production cost:</div></p>
-										<head>
-											<style>
-												* {
-													padding: 0;
-													margin: 0;
-												}
-												.fit { /* set relative picture size */
-													max-width: 100%;
-													max-height: 100%;
-												}
-												.center {
-													display: block;
-													margin: auto;
-												}
-											</style>
-										</head>
-										<body>
-										
-										<img class="center fit" src="images/DAX/Store_Items.png" >  
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<div><p>The second table contains sales data of what merchandise each store has sold. A subset of the table is here:</div></p>
-											<head>
-												<style>
-													* {
-														padding: 0;
-														margin: 0;
-													}
-													.fit { /* set relative picture size */
-														max-width: 100%;
-														max-height: 100%;
-													}
-													.center {
-														display: block;
-														margin: auto;
-													}
-												</style>
-											</head>
-											<body>
-											
-											<img class="center fit" src="images/DAX/Customer_Sales.png" >  
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<br /> 
-										<div><p><u><b>U s i n g &nbsp;&nbsp;  D a x</b></u>
-										<div><p>I will start by uploading the dataset to Power BI. It has automatically recognised that there is 
-										a relationship between the two tables, and they have been joined together using the mutual <em>Product ID</em> 
-										&nbsp;column found in both tables.
-										</div></p>
-											<head>
-												<style>
-													* {
-														padding: 0;
-														margin: 0;
-													}
-													.fit { /* set relative picture size */
-														max-width: 100%;
-														max-height: 100%;
-													}
-													.center {
-														display: block;
-														margin: auto;
-													}
-												</style>
-											</head>
-											<body>
-											
-											<img class="center fit" src="images/DAX/Join_Product_ID.png" ></p><br> 
-											<br> 
-											<br>  
-											<br> 
-											<br>  
-											<br> 
-											<br>  
-											<br> 
-										<div><p>I started by creating a <em>Count of Sales </em> &nbsp;column to show how many 
-										individual merchandise orders each store is making using the <em>COUNT</em> &nbsp;function. I was then able to create 
-										the table and bar chart below.</div></p>
-										<head>
-											<style>
-												* {
-													padding: 0;
-													margin: 0;
-												}
-												.fit { /* set relative picture size */
-													max-width: 100%;
-													max-height: 100%;
-												}
-												.center {
-													display: block;
-													margin: auto;
-												}
-											</style>
-										</head>
-										<body>
-										
-										<img class="center fit" src="images/DAX/1_combined.jpg" > 
-										<br> 
-										<br> 
-										<br> 
-										<br> 
-										<br> 
-										<br> 
-										<br> 
-										<br> 
-										<div><p>I then used the formula below to create a <em>Products Sold</em> &nbsp;column. This was done by totaling 
-											the <em>Units Sold</em> &nbsp;using the <em>SUM</em> &nbsp;function. This combined the Product Name from the 
-											Football Store table, and the Products Sold from the Football Sales table using the joint product ID.</div></p>
-											<head>
-												<style>
-													* {
-														padding: 0;
-														margin: 0;
-													}
-													.fit { /* set relative picture size */
-														max-width: 100%;
-														max-height: 100%;
-													}
-													.center {
-														display: block;
-														margin: auto;
-													}
-												</style>
-											</head>
-											<body>
-											
-											<img class="center fit" src="images/DAX/2_combined.jpg" > 
-											<br> 
-											<br> 
-											<br> 
-											<br> 
-											<br> 
-											<br> 
-											<br> 
-											<br>   
-											<div><p>I then wanted to create a <em>Profit Column</em> &nbsp;for each merchandise item. I first tried a simple 
-											equation of Price minus Product cost, multiplied by Units Sold. This was the <b>wrong</b> equation as it produced 
-											the same result for each row. This was because the equation was multiplied by the sum off all Units Sold, rather 
-											than multiplied by the Units Sold for each individual product.</div></p>
-												<head>
-													<style>
-														* {
-															padding: 0;
-															margin: 0;
-														}
-														.fit { /* set relative picture size */
-															max-width: 100%;
-															max-height: 100%;
-														}
-														.center {
-															display: block;
-															margin: auto;
-														}
-													</style>
-												</head>
-												<body>
-												
-												<img class="center fit" src="images/DAX/4_combined.jpg" > 
-												<br> 
-												<br> 
-												<br> 
-												<br> 
-												<br> 
-												<br>  
-												<br> 
-												<br>  
-												<div><p>This <em>Profit Column</em> &nbsp;was corrected by using <em>SUMX</em> &nbsp;to run this equation on each 
-												individual row, rather than as one total price. We also use <em>RELATEDTABLE</em> &nbsp;to access all the data 
-												from the Football Sales Table to be able to create this Profit Column in the Football Store Table.</div></p>
-													<head>
-														<style>
-															* {
-																padding: 0;
-																margin: 0;
-															}
-															.fit { /* set relative picture size */
-																max-width: 100%;
-																max-height: 100%;
-															}
-															.center {
-																display: block;
-																margin: auto;
-															}
-														</style>
-													</head>
-													<body>
-													
-													<img class="center fit" src="images/DAX/5_combined.jpg" > 
-													<br> 
-													<br> 
-													<br> 
-													<br> 
-													<br> 
-													<br>  
-													<br> 
-													<br>  
-													<div><p>Using <em>SUMX</em> &nbsp;again, I was also able to create the table and bar chart below for <em>Profit by 
-													Customer</em>.</div></p>
-														<head>
-															<style>
-																* {
-																	padding: 0;
-																	margin: 0;
-																}
-																.fit { /* set relative picture size */
-																	max-width: 100%;
-																	max-height: 100%;
-																}
-																.center {
-																	display: block;
-																	margin: auto;
-																}
-															</style>
-														</head>
-														<body>
-														
-														<img class="center fit" src="images/DAX/3_combined.jpg" > 
-														<br> 
-														<br> 
-														<br> 
-														<br> 
-														<br> 
-														<br> 
-														<br> 
-														<br>  
-														<div><p>Next, I wanted to create a <em>Weekday</em> &nbsp;column to be able to visualize sales by day of the week. 
-														I used the <em>Weekday</em> function to transform the Date Purchased column in to the number representing the day 
-														of the week. 1 = Monday, 2 = Tuesday etc. I was then able to create the table and bar chart below which showed us 
-														how Saturday is the busiest day for sales.</div></p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/DAX/6_combined.jpg" > 
-															<br> 
-															<br> 
-															<br> 
-															<br>
-															<br> 
-															<br> 
-															<br> 
-															<br>   
-															<div><p>I then wanted to create a column that designates each sale to either a <em>Big Order</em> &nbsp;or a <em>Small Order</em> 
-															&nbsp;based on whether the sale had over/under 30 units sold. For this I used an <em>IF</em> &nbsp;function as seen below.</div></p>
-																<head>
-																	<style>
-																		* {
-																			padding: 0;
-																			margin: 0;
-																		}
-																		.fit { /* set relative picture size */
-																			max-width: 100%;
-																			max-height: 100%;
-																		}
-																		.center {
-																			display: block;
-																			margin: auto;
-																		}
-																	</style>
-																</head>
-																<body>
-																
-																<img class="center fit" src="images/DAX/7_combined.jpg" > 
-																<br> 
-																<br> 
-																<br> 
-																<br>
-																<br> 
-																<br> 
-																<br> 
-																<br>   
-																<div><p>Combining all of these tables and bar charts, I was able to create this sales report in Power BI for Oslo FC:</div></p>
-																	<head>
-																		<style>
-																			* {
-																				padding: 0;
-																				margin: 0;
-																			}
-																			.fit { /* set relative picture size */
-																				max-width: 100%;
-																				max-height: 100%;
-																			}
-																			.center {
-																				display: block;
-																				margin: auto;
-																			}
-																		</style>
-																	</head>
-																	<body>
-																	
-																	<img class="center fit" src="images/DAX/dashboard.png" ></p><br>
-																</br>		
-										<br /> 
-										<div><p>
-										<u><b><em>What I Learnt:</em></b></u>
-										<p>&#8226; How to use Power BI's DAX to create equations combining data from two tables.</p>
-										<p>&#8226; How to use SUMX to calculate equations row-for-row, rather than as one total.</p>
-										</p></div>
-								</ul>
-							</footer>
-				</br>
-			</br>
-		</br>
-		<hr>
-		<a href="Oslo FC - DAX Dataset.xlsx" > <em>Dataset here</em></a><br />
-	<hr>
+									<p>The underlying data structure consists of two tables: a <em>Store Items</em> table containing item prices and production costs, and a <em>Customer Sales</em> table tracking transaction logs and quantities sold across stores.</p>
+
+									<hr />
+
+									<!-- Full Dashboard Image -->
+									<span class="image main"><img src="images/DAX/dashboard.png" alt="Oslo FC Power BI Sales Report Dashboard" /></span>
+
+									<!-- Dataset Link (Left Aligned) -->
+									<p style="text-align: left;">
+										<a href="Oslo FC - DAX Dataset.xlsx">Original Dataset here</a>
+									</p>
+
+									<hr />
+
+									<h3>Key Findings & Sales Analysis</h3>
+									<ul>
+										<li><strong>Top Profit Generator:</strong> The <strong>Waterproof Coat</strong> produced the highest total profit by a substantial margin at <strong>13,091.00</strong>, despite selling fewer units (265) than lower-margin items due to its high profit margin per unit.</li>
+										<li><strong>Best Selling Merchandise:</strong> The <strong>Tracksuit Top</strong> led overall volume with <strong>477 units sold</strong> (generating 8,781.57 in profit), followed by Jerseys (390 units) and Scarves (365 units). Overall, <strong>3,001 total units</strong> were sold across all items.</li>
+										<li><strong>Key Retail Customer:</strong> <strong>Just Football</strong> generated the highest profit among retail partners at <strong>15,303.80</strong> across 20 sales orders. While <strong>Oslo Sports</strong> recorded slightly more individual orders (22 count of sales), they placed second in total profit (13,079.63). Total retail profit reached <strong>43,212.43</strong>.</li>
+										<li><strong>Peak Purchasing Days:</strong> <strong>Saturday</strong> dominated weekly sales volume with <strong>886 units sold</strong>—nearly double any weekday volume (Monday recorded 486 units). Matchday weekends represent the primary revenue driver for Oslo FC merchandise.</li>
+									</ul>
+
+									<hr />
+
+									<h3>DAX Calculations & Data Modelling</h3>
+
+									<p><strong>1. Relational Data Join:</strong> Uploaded the dataset to Power BI, which automatically recognised the one-to-many relationship between the two tables via the mutual <code>Product ID</code> column.</p>
+									<span class="image main"><img src="images/DAX/Join_Product_ID.png" alt="Joining tables on Product ID" /></span>
+
+									<p><strong>2. Count of Sales by Store:</strong> Created a <code>Count of Sales</code> column using the <code>COUNT</code> function to evaluate order frequency across retail customers.</p>
+									<span class="image main"><img src="images/DAX/1_combined.jpg" alt="Count of sales calculations and chart" /></span>
+
+									<p><strong>3. Units & Products Sold:</strong> Combined data from the Football Store and Football Sales tables using the <code>SUM</code> function to aggregate total units sold per product.</p>
+									<span class="image main"><img src="images/DAX/2_combined.jpg" alt="Products sold DAX calculations" /></span>
+
+									<p><strong>4. Row-by-Row Profit Calculation (SUMX & RELATEDTABLE):</strong> A simple scalar subtraction multiplied by total units sold returns incorrect results across rows. To evaluate row-level profitability accurately, I used <code>SUMX</code> alongside <code>RELATEDTABLE</code> to calculate <code>(Price - Production Cost) * Units Sold</code> for each individual product line item.</p>
+									<span class="image main"><img src="images/DAX/5_combined.jpg" alt="Corrected profit calculation using SUMX and RELATEDTABLE" /></span>
+
+									<p><strong>5. Customer Profitability:</strong> Utilised <code>SUMX</code> to aggregate total profit generated per retail store customer.</p>
+									<span class="image main"><img src="images/DAX/3_combined.jpg" alt="Profit by customer calculation and chart" /></span>
+
+									<p><strong>6. Day of Week Sales Pattern:</strong> Added a <code>Weekday</code> column using the <code>WEEKDAY</code> function to convert purchase dates into numerical day representations, identifying Saturday as the peak sales period.</p>
+									<span class="image main"><img src="images/DAX/6_combined.jpg" alt="Weekday sales analysis" /></span>
+
+									<p><strong>7. Order Categorisation (Conditional Logic):</strong> Applied an <code>IF</code> function to classify transactions into <code>Big Order</code> (over 30 units) or <code>Small Order</code> (30 units or fewer) for order size profiling.</p>
+									<span class="image main"><img src="images/DAX/7_combined.jpg" alt="IF function for order size classification" /></span>
+
+								</div>
+							</section>
+
+					</div>
+
 				<!-- Footer -->
 					<footer id="first">
 						<section>
 							<h2>Contact</h2>
 							<dl class="alt">
-								<dt>Address</dt>
+								<dt>Location</dt>
 								<dd>Oslo &bull; Norway</dd>
 								<dt>Email</dt>
-								<dd><a>jtwomey@hotmail.co.uk</a></dd>
+								<dd><a href="mailto:jtwomey@hotmail.co.uk">jtwomey@hotmail.co.uk</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="https://linkedin.com/in/jack-twomey" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 								<!--<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
 								<!--<li><a href="Power BI dashboards.html" target="_blank" class="label">Power BI</span></a></li> -->
-								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</span></a></li>
+								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</a></li>
 							</ul>
 						</section>
-						
+					</footer>
 
 			</div>
 
