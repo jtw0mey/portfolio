@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>Power Outages in the US | Jack Twomey Portfolio</title>
+		<li><a href="index.html" class="button">Home</a></li>
+		<title>Power Outages in the US</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -13,11 +19,8 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<nav style="position: absolute; top: 2em; left: 2em;">
-							<a href="index.html" class="button small">Home</a>
-						</nav>
-						<span class="icon major style1 fa fa-bolt" style="margin-bottom: 1em;"></span>
+					<header id="header" class="alt">
+						<span class="logo"><i class="fa fa-bolt fa-2x"></i></span>
 						<h1>Power Outages in the US</h1>
 						<p>Power BI Data Analysis & Visualization</p>
 					</header>
@@ -25,51 +28,54 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Content -->
-							<section id="content" class="main">
-								
-								<h2>Power Outages Analysis <i class="fa fa-bolt"></i></h2>
+						<!-- First Section -->
+							<section id="first" class="main">
+								<header class="major">
+									<h2>Power Outages Analysis <i class="fa fa-bolt"></i></h2>
+									<p><strong>Tools:</strong> Power BI | Excel &nbsp;|&nbsp; <strong>Data Sources:</strong> US Department of Energy (DOE)</p>
+								</header>
 
-								<!-- Dashboard Image at Top -->
-								<span class="image main"><img src="images/power_outage_dashboard.png" alt="US Power Outages Power BI Dashboard" /></span>
+								<!-- Top Image -->
+								<span class="image main"><img src="images/Power_Outage_Dashboard.png" alt="US Power Outages Power BI Dashboard" /></span>
 
-								<p>
+								<p style="text-align: center;">
 									<a href="https://www.oe.netl.doe.gov/OE_Annual_Reports.aspx" target="_blank">Original Dataset here</a> &nbsp;|&nbsp; 
 									<a href="#">Cleaned Dataset here</a>
 								</p>
 
-								<h2>Project Overview</h2>
-								<p>For this project, I played the role of an Analytics Consultant hired by the U.S. Department of Energy. My goal was to consolidate and clean raw historical data to create an interactive dashboard analyzing patterns, root causes, and restoration trends for power outages across the U.S. between 2002 and 2023.</p>
+								<div class="content">
+									<h3>Project Overview</h3>
+									<p>For this project, I played the role of an Analytics Consultant hired by the U.S. Department of Energy. My goal was to consolidate and clean raw historical data to create an interactive dashboard analyzing patterns, root causes, and restoration trends for power outages across the U.S. between 2002 and 2023.</p>
 
-								<hr />
+									<hr />
 
-								<h2>Data Cleaning</h2>
-								<p>This was an extensive data cleaning effort. The original dataset was separated into individual annual spreadsheets from 2002 to 2023, each featuring differing column names, layouts, and time/date formats.</p>
+									<h3>Data Cleaning</h3>
+									<p>This was an extensive data cleaning effort. The original dataset was separated into individual annual spreadsheets from 2002 to 2023, each featuring differing column names, layouts, and time/date formats.</p>
 
-								<ul>
-									<li><strong>Time Standardization:</strong> Standardized varying time entries (e.g., "12:00 p.m.", "noon", "12 noon") into a uniform 24-hour clock format (<code>hh:mm</code>). Split combined date-time cells and executed find-and-replace transformations for AM/PM indicators.</li>
-									<li><strong>Date Formatting:</strong> Transformed inconsistent date entries across regional formats (<code>d/m/y</code> vs <code>m/d/y</code>) into a standard <code>d/m/y</code> structure using Excel's <em>Text to Columns</em> and custom month-conversion formulas.</li>
-									<li><strong>Categorization of Disturbance Types:</strong> Mapped hundreds of unique disturbance descriptions into 13 standardized categories based on the Department of Energy's 2023 customer survey guidelines (e.g., grouping "Hurricane", "Extreme Weatherstorm", and "Heavy Snow" under <em>Weather or Natural Disaster</em>).</li>
-									<li><strong>NERC Region Alignment:</strong> Standardized historical North American Electric Reliability Corporation (NERC) regional definitions to match the updated 2023 regional boundaries.</li>
-									<li><strong>Duration Calculation:</strong> Calculated outage duration by measuring the elapsed time between event onset and complete power restoration to evaluate average restoration efficiency by state and region.</li>
-								</ul>
+									<ul>
+										<li><strong>Time Standardization:</strong> Standardized varying time entries (e.g., "12:00 p.m.", "noon", "12 noon") into a uniform 24-hour clock format (<code>hh:mm</code>). Split combined date-time cells and executed find-and-replace transformations for AM/PM indicators.</li>
+										<li><strong>Date Formatting:</strong> Transformed inconsistent date entries across regional formats (<code>d/m/y</code> vs <code>m/d/y</code>) into a standard <code>d/m/y</code> structure using Excel's <em>Text to Columns</em> and custom month-conversion formulas.</li>
+										<li><strong>Categorization of Disturbance Types:</strong> Mapped hundreds of unique disturbance descriptions into 13 standardized categories based on the Department of Energy's 2023 customer survey guidelines (e.g., grouping "Hurricane", "Extreme Weatherstorm", and "Heavy Snow" under <em>Weather or Natural Disaster</em>).</li>
+										<li><strong>NERC Region Alignment:</strong> Standardized historical North American Electric Reliability Corporation (NERC) regional definitions to match the updated 2023 regional boundaries.</li>
+										<li><strong>Duration Calculation:</strong> Calculated outage duration by measuring the elapsed time between event onset and complete power restoration to evaluate average restoration efficiency by state and region.</li>
+									</ul>
 
-								<hr />
+									<hr />
 
-								<h2>Key Findings</h2>
-								<ul>
-									<li><strong>Weather Dominance:</strong> Weather or Natural Disasters account for <strong>46%</strong> of all U.S. power outages—rising to <strong>96%</strong> for severe outages affecting over 50,000 customers. Transitioning critical infrastructure to underground systems would significantly mitigate these occurrences.</li>
-									<li><strong>Energy Loss Disparities:</strong> Total lost capacity reached <strong>1.04 million Megawatts</strong>, driven predominantly by the SERC (374k MW) and WECC (312k MW) regions—indicating potential infrastructure aging in these grids.</li>
-									<li><strong>High-Impact States:</strong> California, Texas, and Michigan consistently ranked highest across all key metrics: total outages, affected customers, megawatt loss, and average restoration duration.</li>
-									<li><strong>Improved Response Times:</strong> Outage duration has decreased over time. The national average restoration time dropped from <strong>69 hours in 2002</strong> to <strong>8 hours in 2023</strong>, reflecting substantial improvements in emergency response protocols.</li>
-								</ul>
+									<h3>Key Findings</h3>
+									<ul>
+										<li><strong>Weather Dominance:</strong> Weather or Natural Disasters account for <strong>46%</strong> of all U.S. power outages—rising to <strong>96%</strong> for severe outages affecting over 50,000 customers. Transitioning critical infrastructure to underground systems would significantly mitigate these occurrences.</li>
+										<li><strong>Energy Loss Disparities:</strong> Total lost capacity reached <strong>1.04 million Megawatts</strong>, driven predominantly by the SERC (374k MW) and WECC (312k MW) regions—indicating potential infrastructure aging in these grids.</li>
+										<li><strong>High-Impact States:</strong> California, Texas, and Michigan consistently ranked highest across all key metrics: total outages, affected customers, megawatt loss, and average restoration duration.</li>
+										<li><strong>Improved Response Times:</strong> Outage duration has decreased over time. The national average restoration time dropped from <strong>69 hours in 2002</strong> to <strong>8 hours in 2023</strong>, reflecting substantial improvements in emergency response protocols.</li>
+									</ul>
 
-								<hr />
+									<hr />
 
-								<h2>Dashboard Layout</h2>
-								<!-- Dashboard Image at Bottom -->
-								<span class="image main"><img src="images/power_outage_dashboard.png" alt="US Power Outages Power BI Dashboard" /></span>
-
+									<h3>Dashboard Layout</h3>
+									<!-- Bottom Image -->
+									<span class="image main"><img src="images/Power_Outage_Dashboard.png" alt="US Power Outages Power BI Dashboard" /></span>
+								</div>
 							</section>
 
 					</div>
