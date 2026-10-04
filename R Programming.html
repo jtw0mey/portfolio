@@ -22,7 +22,7 @@
 					<header id="header" class="alt">
 						<span class="logo"><i class="fas fa-lemon fa-2x"></i></span>
 						<h1>Avocado Prices in the US</h1>
-						<p>Data Visualization & Analysis using R Programming</p>
+						<p>Data Visualisation & Analysis using R Programming</p>
 					</header>
 
 				<!-- Nav Bar (Greyed / Commented Out) -->
@@ -41,7 +41,7 @@
 						<!-- First Section: Avocado Prices -->
 							<section id="first" class="main">
 								<header class="major">
-									<h2>Avocado Prices Analysis <i class="fas fa-chart-line"></i></h2>
+									<h2>Avocado Prices Analysis <i class="fas fa-lemon"></i></h2>
 									<p><strong>Tools:</strong> R (ggplot2, dplyr, ggthemes) &nbsp;|&nbsp; <strong>Data Sources:</strong> US Avocado Market Dataset</p>
 								</header>
 
@@ -52,12 +52,12 @@
 
 								<div class="content">
 									<h3>Project Overview</h3>
-									<p>In this project, I analyzed the average price of avocados across different regions in the U.S. from 2015 to 2018, using <strong>R Programming</strong> to iteratively build and refine data visualizations with <code>ggplot2</code>.</p>
+									<p>In this project, I analysed the average price of avocados across different regions in the U.S. from 2015 to 2018, using <strong>R Programming</strong> to iteratively build and refine data visualisations with <code>ggplot2</code>.</p>
 
 									<hr />
 
 									<h3>Initial Line Graph</h3>
-									<p>After loading the dataset into R, I created a basic line graph using <code>ggplot</code>. The Date and Average Price are assigned to the axes, with line colors representing each U.S. region.</p>
+									<p>After loading the dataset into R, I created a basic line graph using <code>ggplot</code>. The Date and Average Price are assigned to the axes, with line colours representing each U.S. region.</p>
 									<span class="image main"><img src="images/Avo/comb_first_graph.jpg" alt="Initial Avocado Price Line Graph" /></span>
 									<p>While functional, this default graph is quite plain. To make it more insightful, I enhanced it by adding descriptive titles, applying themes, modifying line aesthetics, and highlighting key regional data.</p>
 
@@ -74,17 +74,17 @@
 									<p><strong>3. Line Thickness & Opacity:</strong> Increased line size to <code>1.5</code> and set alpha to <code>0.75</code> for improved readability.</p>
 									<span class="image main"><img src="images/Avo/avo_line_thickness.png" alt="R Code for line thickness" /></span>
 
-									<p><strong>4. Highlighting Key Regional Trends:</strong> To emphasize the <strong>Northeast</strong> region (which consistently recorded the highest average price), I used <code>dplyr</code>'s <code>mutate()</code> function to create a conditional flag—keeping the Northeast line solid while setting all other regional lines to dashed.</p>
+									<p><strong>4. Highlighting Key Regional Trends:</strong> To emphasise the <strong>Northeast</strong> region (which consistently recorded the highest average price), I used <code>dplyr</code>'s <code>mutate()</code> function to create a conditional flag—keeping the Northeast line solid while setting all other regional lines to dashed.</p>
 									<span class="image main"><img src="images/Avo/comb_mid_graph.jpg" alt="Mid-iteration graph highlighting Northeast region" /></span>
 
-									<p><strong>5. Final Aesthetics & Typography:</strong> Finalized the design with customized color palettes and fonts.</p>
+									<p><strong>5. Final Aesthetics & Typography:</strong> Finalised the design with customised colour palettes and fonts.</p>
 									<span class="image main"><img src="images/Avo/comb_final_graph.jpg" alt="Final Avocado Price Line Graph" /></span>
 
 									<hr />
 
 									<h3>Key Findings & Analysis</h3>
 									<ul>
-										<li><strong>Regional Price Disparities:</strong> As visualized in the 5-region line chart, the <strong>Northeast</strong> (solid blue line) consistently maintained the highest average price per unit across the entire timeframe, peaking near <strong>$1.80</strong> in late 2017[cite: 12]. Conversely, the <strong>West</strong> (dashed orange line) recorded the lowest overall prices, dipping under <strong>$1.00</strong> in early 2016 and 2017[cite: 12].</li>
+										<li><strong>Regional Price Disparities:</strong> As visualised in the 5-region line chart, the <strong>Northeast</strong> (solid blue line) consistently maintained the highest average price per unit across the entire timeframe, peaking near <strong>$1.80</strong> in late 2017[cite: 12]. Conversely, the <strong>West</strong> (dashed orange line) recorded the lowest overall prices, dipping under <strong>$1.00</strong> in early 2016 and 2017[cite: 12].</li>
 										<li><strong>Supply Chain & Logistics Impact:</strong> This gap is largely driven by U.S. reliance on Mexican imports (1.3M metric tons imported vs. 156k metric tons produced domestically in 2022). Proximity to Mexican borders and local California production keeps West Coast transportation and freight costs substantially lower than in the Northeast.</li>
 										<li><strong>Market Shocks & Price Peaks:</strong>
 											<ul>
@@ -96,19 +96,10 @@
 
 									<hr />
 
-									<h3>Additional Visualization: Regional Lollipop Chart</h3>
+									<h3>Additional Visualisation: Regional Lollipop Chart</h3>
 									<p>I also built a lollipop chart to display the overall average price by region relative to the overall national average (vertical reference line at approximately <strong>$1.43</strong>)[cite: 13].</p>
 									<p>Using <code>dplyr</code>'s <code>mutate()</code> and <code>tidyverse</code>'s <code>fct_reorder()</code>, I calculated regional averages and ordered them sequentially[cite: 13]. The Northeast sits furthest to the right of the national mean line, while the West sits furthest to the left[cite: 13]. I plotted the initial axes, flipped them using <code>coord_flip()</code>, added slight jittering with <code>geom_jitter()</code>, and constructed the lollipop stems using <code>geom_hline()</code> and <code>geom_segment()</code>[cite: 13].</p>
 									<span class="image main"><img src="images/Avo/comb_lollipop_graph.jpg" alt="Avocado Regional Lollipop Chart" /></span>
-
-									<hr />
-
-									<h3>Key Takeaways & R Skills Used</h3>
-									<ul>
-										<li>Applying and customizing pre-built themes in <code>ggplot2</code> / <code>ggthemes</code>.</li>
-										<li>Utilizing <code>dplyr</code> logic to conditionally format line types (solid vs. dashed).</li>
-										<li>Designing custom lollipop charts with <code>geom_segment()</code>, <code>geom_hline()</code>, and <code>coord_flip()</code>.</li>
-									</ul>
 
 								</div>
 							</section>
@@ -122,7 +113,7 @@
 								</header>
 
 								<div class="content">
-									<p>I visualized a dataset containing penguins based in Palmer Archipelago, Antarctica. The data includes size measurements of three species of penguin from three different islands.</p>
+									<p>I visualised a dataset containing penguins based in Palmer Archipelago, Antarctica. The data includes size measurements of three species of penguin from three different islands.</p>
 									<p>I first looked at body mass vs flipper length for each species. We can see a positive relationship between the two measurements, with Gentoo penguins having the largest body mass and flipper length of the three species.</p>
 									
 									<span class="image main"><img src="images/Penguin/comb_peng_body_vs_flipper.jpg" alt="Penguin Body Mass vs Flipper Length" /></span>
