@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<li><a href="index.html" class="button">Home</a></li>
-		<title>R Programming</title>
+		<title>Avocado Prices / R Programming</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,365 +20,120 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Data Visualization</h1>
-						<p>R Programming<br>
-						<!-- <a href="https://linkedin.com/in/jack-twomey" target="_blank" >@JackTwomey</a> -->
+						<span class="logo"><i class="fa fa-keyboard fa-2x"></i></span>
+						<h1>Avocado Prices in the US</h1>
+						<p>Data Visualization & Analysis using R Programming</p>
 					</header>
 
-								<!-- Nav -->
-								<nav id="nav">
-									<ul>
-										<li><a href="#first" class="active">Avocado Prices</a></li>
-										<li><a href="#second">Palmer Penguins</a></li>
-									</ul>
-								</nav>	
-
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#first" class="active">Avocado Prices</a></li>
+							<!-- <li><a href="#second">Palmer Penguins</a></li> -->
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-												<!-- First Section -->
-												<section id="first" class="main">
-													<header class="major">
-														<h2>Avocado Prices <i class="fas fa-lemon"></i></h2>
-														<a href="avocado_price_data.xlsx" > <em>Original Dataset here</em></a><br> 
-														<br> <p>
-														<!-- <u><b>P r o j e c t </b></u> -->
-															<div><p><b>I will be looking at the price of Avocados in different regions of USA from 2015 - 2018, and 
-															visualizing the change using R Programming.</b></p>
-															<div><p>After uploading the dataset to R, I was able to plot the following line graph quick and easily using ggplot. 
-															The Date and Average Price are on the axis', and the lines are colour coded by region.</p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/Avo/comb_first_graph.jpg" >
-															<p>Although this line graph is sufficient and achieves my aim of showing the change in avocado prices, I still 
-															think it is basic and the visualization can be improved. I will try to improve this graph by adding titles, 
-															adding a theme to the graph, enhancing the data I want to show, and editing the colours and fonts.</p><br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<div><p>I will start by using 'labs' to add a title and subtitle to the graph, and modify the axis' and legends names.</p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/Avo/avo_adding_titles_code.png" >
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<div><p>I then used the 'fivethirtyeight' theme from ggthemes which slightly changed the feel and layout of the graph, 
-															removing some gridlines and moving the legend to the bottom of the graph. The theme set my axis 
-															titles to blanks, so I readded these using element text.</p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/Avo/avo_theme_code.png" >
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<div><p>I also increased the thickness and opacity of the lines by increasing line size to 1.5, and alpha to 0.75, to 
-															show each region line more clearly.</p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/Avo/avo_line_thickness.png" >
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<div><p>I then enhanced the data that I wanted to highlight. For this graph, I wanted to show which region (Northeast) 
-															had the highest average price. I kept this Northeast line solid, whilst changing the rest to dashed lines by 
-															utilizing R's dyplr package and its mutate function. I then made changes to the geom_line code and to the line 
-															type, to differentiate between Northeast data, and the rest of the data.</p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/Avo/comb_mid_graph.jpg" >
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<br> 
-															<div><p>I am happy with the improvements that I have made to this line graph. I will just make some final aesthetic 
-															changes to the font and colour of the lines. </p>
-															<head>
-																<style>
-																	* {
-																		padding: 0;
-																		margin: 0;
-																	}
-																	.fit { /* set relative picture size */
-																		max-width: 100%;
-																		max-height: 100%;
-																	}
-																	.center {
-																		display: block;
-																		margin: auto;
-																	}
-																</style>
-															</head>
-															<body>
-															
-															<img class="center fit" src="images/Avo/comb_final_graph.jpg" >
-															</br>
-															<br> 
-															<br>
-															<br> 
-															<p><u><b>A n a l y s i s </b></u>
-																
-																<div><p>We can see the region with the highest average price is the Northeast (blue line), and the region 
-																with the lowest average price is the West (orange line). A big reason for this is USA's heavy reliance on Mexico 
-																for their avocados. In 2022, USA imported 1.3m metric tons of avocados from Mexico, whereas they only produced 
-																156k metric tons themselves. This will have a big effect on the price of avocados because the west of USA borders 
-																Mexico, which will result in lower transportation costs compared to the northeast of USA.</div>
-																<div><p>Another factor making the average price cheaper in the West, is the vast majority of avocados grown in the US are from 
-																California, where the West Coast produces a suitable climate for the growth of avocados. This produces lower prices in 
-																the West as they have local produce available, in addition to the lower transportation costs. We see the opposite of 
-																this with the Northeast having the most expensive avocados, with the region being furthest from Mexico and the West of 
-																USA.</div>
-																<div><p>We see two big peaks at the back end of the year in both 2016 and 2017, where the avocado price rises sharply. The rise 
-																in late 2016 can be explained by many 
-																<a href="https://www.dallasnews.com/business/local-companies/2016/10/28/strikes-in-mexico-lead-to-avocado-shortage-increased-prices-in-dallas/" target="blank">avocado producers' in Mexico going on strike</a> 
-																in October 2016, causing avocados to triple in price in some US cities.
-																The 2017 peak can be explained by the <a href="https://www.bbc.com/news/business-39768480" target="blank">reduced harvest 
-																in Mexico and California</a> in mid- to late-2017, causing prices to surge again.
-																</div></p>
-													</ul>
-												</footer>
-													<br>
-												<br>
-											<br>
-										<br>
-										<p><u><b>A d d i t i o n a l &nbsp;&nbsp;A v o c a d o &nbsp;&nbsp;G r a p h s </b></u>
-										<div><p>I created this lollipop chart showing the price of avocados by region. The 'lollipops' have produced 
-										a visually attractive graph with the emphasis on the lollipop's dot drawing the viewer's attention 
-										towards that region's average.</div>
-										<div><p>I started by creating a new column for the average price by region by using dyplr's mutate function, and rearranged 
-										it in descending order using tidyverse's fct_reorder. We then plot the graph, originally placing Region on x axis 
-										and Average Price on y axis, this is done as Average Price is discrete data, whereas the x axis needs continuous 
-										data. We then flip the graph using coord_flip to get the axis on the sides we want. Next I used geom_jitter to add 
-										small variation to each point on the graph to avoid overlapping plots. Then geom_hline is used to create the average 
-										overall line where all the 'lollipops' begin. The geom_segment is then utilised for creating the 'lollipop' stick, 
-										where a coloured line goes from the geom_hline out to the average for that specific region.
-									</p></div>
-									<head>
-										<style>
-											* {
-												padding: 0;
-												margin: 0;
-											}
-											.fit { /* set relative picture size */
-												max-width: 100%;
-												max-height: 100%;
-											}
-											.center {
-												display: block;
-												margin: auto;
-											}
-										</style>
-									</head>
-									<body>
+						<!-- First Section: Avocado Prices -->
+							<section id="first" class="main">
+								<header class="major">
+									<h2>Avocado Prices Analysis <i class="fa fa-lemon-o"></i></h2>
+									<p><strong>Tools:</strong> R (ggplot2, dplyr, ggthemes) &nbsp;|&nbsp; <strong>Data Sources:</strong> US Avocado Market Dataset</p>
+								</header>
+
+								<!-- Dataset Link (Left Aligned) -->
+								<p style="text-align: left;">
+									<a href="avocado_price_data.xlsx">Original Dataset here</a>
+								</p>
+
+								<div class="content">
+									<h3>Project Overview</h3>
+									<p>In this project, I analyzed the average price of avocados across different regions in the U.S. from 2015 to 2018, using <strong>R Programming</strong> to iteratively build and refine data visualizations with <code>ggplot2</code>.</p>
+
+									<hr />
+
+									<h3>Initial Line Graph</h3>
+									<p>After loading the dataset into R, I created a basic line graph using <code>ggplot</code>. The Date and Average Price are assigned to the axes, with line colors representing each U.S. region.</p>
+									<span class="image main"><img src="images/Avo/comb_first_graph.jpg" alt="Initial Avocado Price Line Graph" /></span>
+									<p>While functional, this default graph is quite plain. To make it more insightful, I enhanced it by adding descriptive titles, applying themes, modifying line aesthetics, and highlighting key regional data.</p>
+
+									<hr />
+
+									<h3>Iterative Improvements in R</h3>
 									
-									<img class="center fit" src="images/Avo/comb_lollipop_graph.jpg" >
-				</li>
-			<br> 
-		<br> 
-	<br> 
-<br>
-<br>
-<div>
-<p>
-<b><u><em>What I Learnt:</em></b></u>
-<p>&#8226; How to use themes and modify them to add/remove certain elements.</p>
-<p>&#8226; How to use dyplr to create different line types using a True/False column.</p>
-<p>&#8226; How to create a lollipop chart using the average as the 'lollipop'.</p>
-</div>
-<br>
-<br>
-<br>
-<br> 
-<br> 
-<br>
-<br> 
-<br>  
-<hr>
-<br>
-						<!-- First Section -->
+									<p><strong>1. Adding Titles & Formatting Labels:</strong> Used <code>labs()</code> to define a clear title, subtitle, axis labels, and legend titles.</p>
+									<span class="image main"><img src="images/Avo/avo_adding_titles_code.png" alt="R Code for adding titles" /></span>
+
+									<p><strong>2. Applying Themes:</strong> Applied the <code>fivethirtyeight</code> theme from <code>ggthemes</code> to simplify gridlines and shift the legend to the bottom, then restored missing axis titles with <code>element_text()</code>.</p>
+									<span class="image main"><img src="images/Avo/avo_theme_code.png" alt="R Code for applying theme" /></span>
+
+									<p><strong>3. Line Thickness & Opacity:</strong> Increased line size to <code>1.5</code> and set alpha to <code>0.75</code> for improved readability.</p>
+									<span class="image main"><img src="images/Avo/avo_line_thickness.png" alt="R Code for line thickness" /></span>
+
+									<p><strong>4. Highlighting Key Regional Trends:</strong> To emphasize the <strong>Northeast</strong> region (which consistently recorded the highest average price), I used <code>dplyr</code>'s <code>mutate()</code> function to create a conditional flag—keeping the Northeast line solid while setting all other regional lines to dashed.</p>
+									<span class="image main"><img src="images/Avo/comb_mid_graph.jpg" alt="Mid-iteration graph highlighting Northeast region" /></span>
+
+									<p><strong>5. Final Aesthetics & Typography:</strong> Finalized the design with customized color palettes and fonts.</p>
+									<span class="image main"><img src="images/Avo/comb_final_graph.jpg" alt="Final Avocado Price Line Graph" /></span>
+
+									<hr />
+
+									<h3>Key Findings & Analysis</h3>
+									<ul>
+										<li><strong>Regional Price Disparities:</strong> The <strong>Northeast</strong> consistently experienced the highest average prices, whereas the <strong>West</strong> recorded the lowest. This is primarily driven by U.S. reliance on Mexican avocado imports (1.3M metric tons imported vs. 156k metric tons produced domestically in 2022). Shorter supply routes to the West keep transportation costs significantly lower.</li>
+										<li><strong>Domestic Production Impact:</strong> Most U.S.-grown avocados originate in California. Proximity to local crops further reduces costs for Western states compared to the distant Northeast market.</li>
+										<li><strong>Supply Chain Disruptions & Price Spikes:</strong>
+											<ul>
+												<li><strong>Late 2016 Peak:</strong> A major supply disruption occurred in October 2016 due to <a href="https://www.dallasnews.com/business/local-companies/2016/10/28/strikes-in-mexico-lead-to-avocado-shortage-increased-prices-in-dallas/" target="_blank">producers striking in Mexico</a>, causing prices to surge across several U.S. markets.</li>
+												<li><strong>2017 Peak:</strong> Reduced harvest yields in both <a href="https://www.bbc.com/news/business-39768480" target="_blank">Mexico and California</a> during mid-to-late 2017 drove another substantial price spike.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<hr />
+
+									<h3>Additional Visualization: Regional Lollipop Chart</h3>
+									<p>I also built a lollipop chart to display the overall average price by region. The lollipop design draws visual focus directly to each region's specific price point.</p>
+									<p>Using <code>dplyr</code>'s <code>mutate()</code> and <code>tidyverse</code>'s <code>fct_reorder()</code>, I calculated regional averages and ordered them sequentially. I plotted the initial axes, flipped them using <code>coord_flip()</code>, added slight jittering with <code>geom_jitter()</code>, and constructed the lollipop stems from an overall baseline using <code>geom_hline()</code> and <code>geom_segment()</code>.</p>
+									<span class="image main"><img src="images/Avo/comb_lollipop_graph.jpg" alt="Avocado Regional Lollipop Chart" /></span>
+
+									<hr />
+
+									<h3>Key Takeaways & R Skills Used</h3>
+									<ul>
+										<li>Applying and customizing pre-built themes in <code>ggplot2</code> / <code>ggthemes</code>.</li>
+										<li>Utilizing <code>dplyr</code> logic to conditionally format line types (solid vs. dashed).</li>
+										<li>Designing custom lollipop charts with <code>geom_segment()</code>, <code>geom_hline()</code>, and <code>coord_flip()</code>.</li>
+									</ul>
+
+								</div>
+							</section>
+
+						<!-- Second Section: Palmer Penguins (Greyed / Commented Out) -->
+						<!--
 							<section id="second" class="main">
 								<header class="major">
-									<h2>Palmer Penguins <i class="fas fa-kiwi-bird"></i></h2>
-									<a href="Palmer_penguin_data.xlsx" > <em>Original Dataset here</em></a><br>
-									<br> 
-			<div><p>I visualized a dataset containing penguins based in Palmer Archipelago, Antartica. 
-			The data includes size measurements of three species of penguin, from three different islands.</div>
-			<div><p>I first looked at body mass vs flipper length for each species. We can see a positive relationship 
-			between the two measurements, with Gentoo penguins having the largest body mass and flipper length 
-			of the three species. This can be seen with the blue squares dominating the top right of the 
-			scatterplot.
-			</div></p>
-									<head>
-										<style>
-											* {
-												padding: 0;
-												margin: 0;
-											}
-											.fit { /* set relative picture size */
-												max-width: 100%;
-												max-height: 100%;
-											}
-											.center {
-												display: block;
-												margin: auto;
-											}
-										</style>
-									</head>
-									<body>
+									<h2>Palmer Penguins <i class="fa fa-kiwi-bird"></i></h2>
+									<a href="Palmer_penguin_data.xlsx"><em>Original Dataset here</em></a>
+								</header>
+
+								<div class="content">
+									<p>I visualized a dataset containing penguins based in Palmer Archipelago, Antarctica. The data includes size measurements of three species of penguin from three different islands.</p>
+									<p>I first looked at body mass vs flipper length for each species. We can see a positive relationship between the two measurements, with Gentoo penguins having the largest body mass and flipper length of the three species.</p>
 									
-									<img class="center fit" src="images/Penguin/comb_peng_body_vs_flipper.jpg" >
-						</li>
-								<br>
-							<br>
-						<br>
-					<br>
-						<section id="second" class="main">
-							<header class="major">
-								<!-- <h2>Scatterplot</h2> -->
-								<head>
-									<style>
-										* {
-											padding: 0;
-											margin: 0;
-										}
-										.fit { /* set relative picture size */
-											max-width: 50%;
-											max-height: 100%;
-										}
-										.center {
-											display: block;
-											margin: auto;
-										}
-									</style>
-								</head>
-								<body>
-									<br> 
-									<br> 
-									<div><p>I then took a look at the difference between male and female penguins using a facet grid. Both 
-										scatterplots shows a similar pattern as the previous graph, but this displays the contrast in 
-										size between the genders, with males being larger than females in all three species.
-										</p></div>
-								<head>
-									<style>
-										* {
-											padding: 0;
-											margin: 0;
-										}
-										.fit { /* set relative picture size */
-											max-width: 100%;
-											max-height: 100%;
-										}
-										.center {
-											display: block;
-											margin: auto;
-										}
-									</style>
-								</head>
-								<body>
-								
-								<img class="center fit" src="images/Penguin/comb_peng_gender.jpg" ><br> 
-								</ul>
-							</footer>
-						<br>
-					<br>
-				<br>
-			<br>
-		<br>
-	<hr>
+									<span class="image main"><img src="images/Penguin/comb_peng_body_vs_flipper.jpg" alt="Penguin Body Mass vs Flipper Length" /></span>
+
+									<p>I then took a look at the difference between male and female penguins using a facet grid. Both scatterplots show a similar pattern as the previous graph, but display the contrast in size between genders, with males being larger than females across all three species.</p>
+									
+									<span class="image main"><img src="images/Penguin/comb_peng_gender.jpg" alt="Penguin Gender Scatterplot" /></span>
+								</div>
+							</section>
+						-->
+
+					</div>
+
 				<!-- Footer -->
 					<footer id="first">
 						<section>
@@ -387,16 +142,16 @@
 								<dt>Location</dt>
 								<dd>Oslo &bull; Norway</dd>
 								<dt>Email</dt>
-								<dd><a>jtwomey@hotmail.co.uk</a></dd>
+								<dd><a href="mailto:jtwomey@hotmail.co.uk">jtwomey@hotmail.co.uk</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="https://linkedin.com/in/jack-twomey" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 								<!--<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
 								<!--<li><a href="Power BI dashboards.html" target="_blank" class="label">Power BI</span></a></li> -->
-								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</span></a></li>
+								<li><a href="https://public.tableau.com/app/profile/jack.twomey" target="_blank" class="label">Tableau</a></li>
 							</ul>
 						</section>
-						
+					</footer>
 
 			</div>
 
