@@ -19,8 +19,10 @@
 
 				<!-- Header -->
 					<header id="header">
+						<a href="index.html" class="button" style="position: absolute; top: 2em; left: 2em;">Home</a>
+						<span class="logo"><i class="fas fa-futbol fa-2x"></i></span>
 						<h1>Premier League xG Analytics Engine</h1>
-						<p>My first automated ETL pipeline & interactive Streamlit dashboard</p>
+						<p>Automated ETL Pipeline & Interactive Dashboard</p>
 					</header>
 
 				<!-- Main -->
@@ -29,8 +31,8 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								
-								<h2>Overview</h2>
-								<p>This is my first end-to-end data engineering project. As a football fan looking to expand beyond static data analysis into automated data workflows, I wanted to build a complete pipeline from scratch: collecting raw Expected Goals (xG) metrics from the web, cleaning and transforming the data, querying it with SQL, and building a live dashboard to display the results.</p>
+								<h2>Premier League xG Pipeline <i class="fas fa-futbol"></i></h2>
+								<p>This was my first end-to-end data engineering project where I built a complete pipeline to collect football data from the web (Understat). I cleaned and transformed the data, queried it using SQL, and deployed an interactive dashboard using Python to display the results.</p>
 
 								<ul class="actions">
 									<li><a href="https://pl-xg-data.streamlit.app/" target="_blank" class="button primary">🚀 Live Interactive Dashboard</a></li>
@@ -45,7 +47,7 @@
 									<li><strong>Transform:</strong> Uses Pandas to clean messy HTML character codes in player/team names and calculates per-90 metrics (xG/90, npxG/90, xGA/90) and overperformance (Goals − xG).</li>
 									<li><strong>Load & Query:</strong> Saves processed data as CSV files. <strong>DuckDB</strong> executes fast in-memory SQL queries directly over these files inside the web app.</li>
 									<li><strong>Automate:</strong> Scheduled via <strong>GitHub Actions</strong> to automatically re-run the pipeline every day at 04:00 UTC so the data stays updated hands-free.</li>
-									<li><strong>Testing & Reliability:</strong> Includes basic unit tests written with `pytest` and error-handling checks so api/data issues don't crash the dashboard.</li>
+									<li><strong>Testing & Reliability:</strong> Includes basic unit tests written with `pytest` and error-handling checks so API or data issues don't crash the dashboard.</li>
 								</ul>
 
 								<hr />
@@ -64,17 +66,6 @@
 
 								<h2>AI-Assisted Development</h2>
 								<p>Throughout this project, I used AI assistants (Claude and Gemini) as pair-programming tools to help me write and debug code, explain new pipeline concepts, and troubleshoot errors. Working this way allowed me to build a functional, end-to-end system while gaining practical understanding of asynchronous scripting, SQL engines, unit testing, and automated scheduling.</p>
-
-								<hr />
-
-								<h2>What I Learned</h2>
-								<ul>
-									<li>Connecting the Extract, Transform, and Load stages into a single automated pipeline</li>
-									<li>Cleaning raw web data and handling special characters with Pandas</li>
-									<li>Executing serverless SQL queries on file datasets using DuckDB</li>
-									<li>Setting up automated workflows and daily cron jobs with GitHub Actions</li>
-									<li>Writing unit tests with `pytest` to prevent broken data builds</li>
-								</ul>
 
 								<hr />
 
