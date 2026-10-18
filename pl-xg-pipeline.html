@@ -34,6 +34,8 @@
 								<h2>Premier League xG Pipeline <i class="fas fa-futbol"></i></h2>
 								<p>This was my first end-to-end data engineering project where I built a complete pipeline to collect football data from the web (Understat). I cleaned and transformed the data, queried it using SQL, and deployed an interactive dashboard using Python to display the results.</p>
 
+								<span class="image main"><img src="images/pl-xg-dashboard.png" alt="Premier League xG Dashboard Preview" /></span>
+
 								<ul class="actions">
 									<li><a href="https://pl-xg-data.streamlit.app/" target="_blank" class="button primary">🚀 Live Interactive Dashboard</a></li>
 									<li><a href="https://github.com/jtw0mey/pl-xg-data-pipeline" target="_blank" class="button">💻 GitHub Repository</a></li>
@@ -43,11 +45,11 @@
 
 								<h2>How the Pipeline Works</h2>
 								<ul>
-									<li><strong>Extract:</strong> Uses Python (`AsyncIO` and `aiohttp`) to harvest player and team performance data from Understat APIs into raw JSON files.</li>
-									<li><strong>Transform:</strong> Uses Pandas to clean messy HTML character codes in player/team names and calculates per-90 metrics (xG/90, npxG/90, xGA/90) and overperformance (Goals − xG).</li>
-									<li><strong>Load & Query:</strong> Saves processed data as CSV files. <strong>DuckDB</strong> executes fast in-memory SQL queries directly over these files inside the web app.</li>
-									<li><strong>Automate:</strong> Scheduled via <strong>GitHub Actions</strong> to automatically re-run the pipeline every day at 04:00 UTC so the data stays updated hands-free.</li>
-									<li><strong>Testing & Reliability:</strong> Includes basic unit tests written with `pytest` and error-handling checks so API or data issues don't crash the dashboard.</li>
+									<li><strong>Extract:</strong> Uses Python ('AsyncIO' and 'aiohttp') to collect player and team performance data from Understat APIs into raw JSON files.</li>
+									<li><strong>Transform:</strong> Uses Pandas to clean messy HTML character codes in player and team names, and calculates per-90 metrics (xG/90, npxG/90, xGA/90) and overperformance (Goals − xG).</li>
+									<li><strong>Load & Query:</strong> Saves processed data as CSV files. DuckDB executes fast in-memory SQL queries directly over these files inside the web app.</li>
+									<li><strong>Automate:</strong> Scheduled via GitHub Actions to automatically re-run the pipeline every day at 04:00 UTC so the data stays updated hands-free.</li>
+									<li><strong>Testing & Reliability:</strong> Includes basic unit tests written with 'pytest' and error handling so API or data issues do not crash the dashboard.</li>
 								</ul>
 
 								<hr />
@@ -56,7 +58,7 @@
 								<ul>
 									<li><strong>Language:</strong> Python 3.11</li>
 									<li><strong>Data Processing & SQL:</strong> Pandas, DuckDB</li>
-									<li><strong>Data Collection:</strong> `understat`, `AsyncIO`, `aiohttp`</li>
+									<li><strong>Data Collection:</strong> 'understat', 'AsyncIO', 'aiohttp'</li>
 									<li><strong>Dashboard & Visualization:</strong> Streamlit, Plotly</li>
 									<li><strong>Testing & Automation:</strong> pytest, GitHub Actions</li>
 									<li><strong>Hosting:</strong> Streamlit Community Cloud</li>
@@ -65,7 +67,7 @@
 								<hr />
 
 								<h2>AI-Assisted Development</h2>
-								<p>Throughout this project, I used AI assistants (Claude and Gemini) as pair-programming tools to help me write and debug code, explain new pipeline concepts, and troubleshoot errors. Working this way allowed me to build a functional, end-to-end system while gaining practical understanding of asynchronous scripting, SQL engines, unit testing, and automated scheduling.</p>
+								<p>Throughout this project, I used AI tools (Claude and Gemini) as coding assistants to help me write Python scripts, debug errors, and learn new pipeline concepts. Working this way helped me build a fully functional system while developing practical skills in Python automation, SQL engines, unit testing, and scheduled workflows.</p>
 
 								<hr />
 
