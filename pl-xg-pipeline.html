@@ -32,7 +32,7 @@
 							<section id="content" class="main">
 								
 								<h2>Project Overview <i class="fas fa-futbol"></i></h2>
-								<p>This was my first end-to-end data engineering project where I built a complete pipeline to collect football data from the web (Understat). I cleaned and transformed the data, queried it using SQL, and deployed an interactive dashboard using Python to display the results.</p>
+								<p>This was my first end-to-end data engineering project where I built a complete pipeline to collect football data from the web (Understat). I loaded the raw data into a DuckDB warehouse, transformed and modeled it using dbt, tested for missing data, and built an interactive Streamlit dashboard to display the analytics.</p>
 
 								<span class="image main"><img src="images/pl-xg-dashboard.png" alt="Premier League xG Dashboard Preview" /></span>
 
@@ -45,11 +45,12 @@
 
 								<h2>How the Pipeline Works</h2>
 								<ul>
-									<li><strong>Extract:</strong> Uses Python ('AsyncIO' and 'aiohttp') to collect player and team performance data from Understat APIs into raw JSON files.</li>
-									<li><strong>Transform:</strong> Uses Pandas to clean messy HTML character codes in player and team names, and calculates per-90 metrics (xG/90, npxG/90, xGA/90) and overperformance (Goals − xG).</li>
-									<li><strong>Load & Query:</strong> Saves processed data as CSV files. DuckDB executes fast in-memory SQL queries directly over these files inside the web app.</li>
+									<li><strong>Extract:</strong> Uses Python ('AsyncIO' and 'aiohttp') to collect player and team performance data from Understat into raw CSV files.</li>
+									<li><strong>Ingest (dbt Seeds):</strong> Uses dbt seeds to automatically load raw CSV files straight into a DuckDB database.</li>
+									<li><strong>Transform (dbt Models):</strong> Uses SQL in dbt to clean data types, combine multiple seasons, and build dynamic analytics models (staging and summary tables).</li>
+									<li><strong>Data Quality Testing:</strong> Runs automated dbt tests to catch missing values (`not_null`) and ensure database tables stay clean and accurate.</li>
+									<li><strong>Dashboard:</strong> Connects DuckDB directly to Streamlit, rendering fast interactive charts and data tables powered by Plotly.</li>
 									<li><strong>Automate:</strong> Scheduled via GitHub Actions to automatically re-run the pipeline every day at 04:00 UTC so the data stays updated hands-free.</li>
-									<li><strong>Testing & Reliability:</strong> Includes basic unit tests written with 'pytest' and error handling so API or data issues do not crash the dashboard.</li>
 								</ul>
 
 								<hr />
@@ -57,17 +58,17 @@
 								<h2>Tech Stack</h2>
 								<ul>
 									<li><strong>Language:</strong> Python 3.11</li>
-									<li><strong>Data Processing & SQL:</strong> Pandas, DuckDB</li>
-									<li><strong>Data Collection:</strong> 'understat', 'AsyncIO', 'aiohttp'</li>
+									<li><strong>Database & Modeling:</strong> DuckDB, dbt (data build tool), SQL</li>
+									<li><strong>Data Processing & Collection:</strong> Pandas, 'understat', 'AsyncIO', 'aiohttp'</li>
 									<li><strong>Dashboard & Visualization:</strong> Streamlit, Plotly</li>
-									<li><strong>Testing & Automation:</strong> pytest, GitHub Actions</li>
+									<li><strong>Testing & Automation:</strong> dbt test, pytest, GitHub Actions</li>
 									<li><strong>Hosting:</strong> Streamlit Community Cloud</li>
 								</ul>
 
 								<hr />
 
 								<h2>AI-Assisted Development</h2>
-								<p>Throughout this project, I used AI tools (Claude and Gemini) as coding assistants to help me write Python scripts, debug errors, and learn new pipeline concepts. Working this way helped me build a fully functional system while developing practical skills in Python automation, SQL engines, unit testing, and scheduled workflows.</p>
+								<p>Throughout this project, I used AI tools (Claude and Gemini) as coding assistants to help me write Python scripts, build dbt models, debug SQL queries, and learn modern pipeline concepts. Working this way helped me build a fully functional system while developing practical skills in data warehousing, dbt modeling, automated testing, and scheduled workflows.</p>
 
 								<hr />
 
